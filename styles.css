@@ -2303,8 +2303,8 @@ textarea { min-height: 118px; resize: vertical; }
 }
 .section-cream {
   background:
-    radial-gradient(ellipse 80% 70% at 92% 0%, rgba(242, 201, 76, .12) 0%, transparent 55%),
-    linear-gradient(180deg, #FEFAF2 0%, #FBF4E4 100%);
+    radial-gradient(ellipse 80% 70% at 92% 0%, rgba(10, 100, 170, .05) 0%, transparent 55%),
+    linear-gradient(180deg, #F7F8FA 0%, #ECEFF3 100%);
 }
 .section-mesh {
   position: relative; overflow: hidden;
@@ -2348,14 +2348,8 @@ textarea { min-height: 118px; resize: vertical; }
   box-shadow: 0 0 0 4px rgba(242, 201, 76, .18);
 }
 
-/* ---- smoother page-hero → body transition ------------------------------ */
+/* ---- page-hero → body transition (clean cut, no blur fade) ------------- */
 .page-hero { position: relative; }
-.page-hero::after {
-  content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 60px;
-  background: linear-gradient(180deg, transparent 0%, #FFFFFF 100%);
-  pointer-events: none; z-index: 1;
-}
-.page-hero.on-tint::after { background: linear-gradient(180deg, transparent 0%, #FBFDFE 100%); }
 
 /* ---- accent-topped card (used inline via class="card accent") ---------- */
 .card.accent { position: relative; overflow: hidden; }
