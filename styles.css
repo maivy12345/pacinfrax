@@ -2278,6 +2278,407 @@ textarea { min-height: 118px; resize: vertical; }
 
 
 /* ==========================================================================
+   32 · PAGE POLISH — ENHANCED SECTION SYSTEM
+   --------------------------------------------------------------------------
+   Utilities and refinements that lift interior pages beyond the earlier
+   plain white / hairline rhythm. Everything here layers on top of the
+   existing components — no earlier selectors are broken.
+
+     .section-tint         soft cream or sky wash behind a light section
+     .section-mesh         subtle gradient mesh for a hero / feature band
+     .section-heading      centered eyebrow + h2 + lead treatment
+     .divider-ornate       gold dot divider between major sections
+     .page-hero-fade       smooth transition from dark hero to light body
+     .surface-card         upgraded card (used on top of .card / .why-card)
+     .split-visual         split with framed visual on the right
+     .stat-row--card       stat row wrapped in a soft raised panel
+     .next-cards, .next-card   used on About; now the standard page-next
+   ========================================================================== */
+
+/* ---- section rhythm: soft tints ---------------------------------------- */
+.section-tint {
+  background:
+    radial-gradient(ellipse 90% 80% at 8% 0%, rgba(10, 100, 170, .06) 0%, transparent 55%),
+    linear-gradient(180deg, #FBFDFE 0%, #F4F8FD 100%);
+}
+.section-cream {
+  background:
+    radial-gradient(ellipse 80% 70% at 92% 0%, rgba(242, 201, 76, .12) 0%, transparent 55%),
+    linear-gradient(180deg, #FEFAF2 0%, #FBF4E4 100%);
+}
+.section-mesh {
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(ellipse 60% 50% at 12% 0%,  rgba(10, 100, 170, .09) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 88% 100%, rgba(242, 201, 76, .10) 0%, transparent 60%),
+    linear-gradient(180deg, #FFFFFF 0%, #F6F9FC 100%);
+}
+.section-mesh::before {
+  content: ""; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(10, 100, 170, .05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 100, 170, .05) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 0%, transparent 75%);
+          mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 0%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 0%, transparent 75%);
+  pointer-events: none; opacity: .55;
+}
+.section-mesh > .wrap { position: relative; z-index: 1; }
+
+/* ---- refined section heading ------------------------------------------- */
+.section-heading { text-align: center; max-width: 62ch; margin-inline: auto; margin-bottom: 2.4rem; }
+.section-heading .gold-rule { margin-inline: auto; }
+.section-heading h2 { margin-inline: auto; }
+.section-heading .lead { margin-inline: auto; text-align: center; }
+
+/* ---- ornate divider (gold dot with hairlines) -------------------------- */
+.divider-ornate {
+  display: flex; align-items: center; justify-content: center; gap: 1rem;
+  margin-block: clamp(2rem, 5vw, 3rem); color: var(--color-border);
+}
+.divider-ornate::before,
+.divider-ornate::after {
+  content: ""; height: 1px; flex: 1; max-width: 220px;
+  background: linear-gradient(90deg, transparent, var(--color-border), transparent);
+}
+.divider-ornate i {
+  display: block; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--color-gold);
+  box-shadow: 0 0 0 4px rgba(242, 201, 76, .18);
+}
+
+/* ---- smoother page-hero → body transition ------------------------------ */
+.page-hero { position: relative; }
+.page-hero::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 60px;
+  background: linear-gradient(180deg, transparent 0%, #FFFFFF 100%);
+  pointer-events: none; z-index: 1;
+}
+.page-hero.on-tint::after { background: linear-gradient(180deg, transparent 0%, #FBFDFE 100%); }
+
+/* ---- accent-topped card (used inline via class="card accent") ---------- */
+.card.accent { position: relative; overflow: hidden; }
+.card.accent::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-blue));
+  transform: scaleX(0); transform-origin: left; transition: transform .35s var(--ease);
+}
+.card.accent:hover::before { transform: scaleX(1); }
+.card.accent .card-label { color: var(--color-blue); }
+
+/* ---- refined constraint / stack cards ---------------------------------- */
+.constraint-card { transition: transform .3s var(--ease), box-shadow .3s, border-color .3s; }
+.constraint-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: #9FBBD6; }
+.stack-card       { transition: transform .3s var(--ease), box-shadow .3s, border-color .3s; }
+.stack-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: #9FBBD6; }
+.why-card         { transition: transform .3s var(--ease), box-shadow .3s, border-color .3s; }
+.why-card:hover   { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: #E3C05A; }
+
+/* ---- polished stat-row inside a raised card ---------------------------- */
+.stat-row--card {
+  border-top: none;
+  padding: clamp(1.6rem, 3vw, 2.2rem) clamp(1.4rem, 3vw, 2.2rem);
+  margin-top: -3.5rem; margin-bottom: 0.5rem;
+  border-radius: var(--radius-lg);
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 12px 30px rgba(0, 55, 115, .10);
+  position: relative; z-index: 3;
+}
+.stat-row--card > div { position: relative; padding-inline: .4rem; }
+.stat-row--card > div:not(:last-child)::after {
+  content: ""; position: absolute; top: 10%; right: 0; height: 80%;
+  width: 1px; background: var(--color-border);
+}
+@media (max-width: 700px) {
+  .stat-row--card { margin-top: 0; }
+  .stat-row--card > div::after { display: none; }
+}
+
+/* ---- entity-card grid: prevent orphan when count is odd ---------------- */
+.entity-grid {
+  display: grid; gap: 1.15rem; margin-top: 2.6rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 700px)  { .entity-grid { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1080px) { .entity-grid { grid-template-columns: repeat(6, 1fr); }
+  .entity-grid > .entity-card { grid-column: span 3; }
+  .entity-grid > .entity-card:nth-last-child(3):nth-child(odd) { grid-column: span 2; }
+  .entity-grid > .entity-card:nth-last-child(2) { grid-column: span 2; }
+  .entity-grid > .entity-card:nth-last-child(1) { grid-column: span 2; }
+}
+
+/* ---- polished onward navigation (drop-in for .page-next) --------------- */
+.page-next.polished {
+  display: grid; gap: 1.15rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  border-top: none; padding-top: 0;
+  margin-top: 2.4rem;
+}
+.page-next.polished a {
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: space-between;
+  min-height: 168px;
+  padding: 1.55rem 1.5rem 1.4rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  text-decoration: none; color: var(--color-text);
+  font-weight: 600; font-size: 1.02rem; letter-spacing: -.01em;
+  transition: transform .3s var(--ease), box-shadow .3s, border-color .3s;
+}
+.page-next.polished a::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+  background: var(--color-gold);
+  transform: scaleY(0); transform-origin: top; transition: transform .35s var(--ease);
+}
+.page-next.polished a::after {
+  content: "→"; display: inline-block; font-weight: 400;
+  color: var(--color-blue); font-size: 1.25rem; margin-top: 1rem;
+  transition: transform .25s var(--ease);
+}
+.page-next.polished a:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg);
+                              border-color: #9FBBD6; }
+.page-next.polished a:hover::before { transform: scaleY(1); }
+.page-next.polished a:hover::after  { transform: translateX(6px); }
+.page-next.polished a small {
+  display: block; font-size: .68rem; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--color-blue); font-weight: 700; margin-bottom: .55rem;
+}
+.page-next.polished a.is-primary {
+  background: linear-gradient(160deg, #003773 0%, #001A38 100%);
+  border-color: #001A38; color: #FFFFFF;
+}
+.page-next.polished a.is-primary small { color: #9FBBD6; }
+.page-next.polished a.is-primary::after { color: #FFFFFF; }
+.page-next.polished a.is-primary:hover { border-color: var(--color-gold); }
+
+/* ---- section headline treatment: eyebrow with side dashes -------------- */
+.section-open { margin-bottom: 2rem; }
+.section-open .eyebrow {
+  display: inline-flex; align-items: center; gap: .8rem; margin-bottom: 1.1rem;
+}
+.section-open .eyebrow::before {
+  content: ""; width: 26px; height: 1px; background: var(--color-blue);
+  display: inline-block;
+}
+
+/* ---- gold-rule variants ------------------------------------------------ */
+.gold-rule--tall { height: 4px; width: 78px; }
+
+/* ---- refined page-hero-copy on infrastructure/portfolio/etc ------------ */
+.page-hero-copy .btn-row { flex-wrap: wrap; }
+.page-hero-copy p { max-width: 54ch; }
+
+/* ---- signature "kicker line" under h2 for lead alignment --------------- */
+.kicker {
+  display: block; margin-top: .4rem;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic; font-weight: 400;
+  color: var(--color-blue); font-size: clamp(1.05rem, 1.3vw, 1.28rem);
+  letter-spacing: 0;
+}
+
+/* ---- refined feature-tile top accent (always visible, subtle) ---------- */
+.feature-tile { position: relative; }
+.feature-tile::after {
+  content: ""; position: absolute; inset: auto 1.45rem 1rem auto;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(10, 100, 170, .18), transparent 70%);
+  opacity: 0; transition: opacity .3s var(--ease);
+}
+.feature-tile:hover::after { opacity: 1; }
+
+/* ---- portfolio pipeline totals band ------------------------------------ */
+.pipeline-total {
+  display: flex; align-items: center; justify-content: space-between; gap: 1.4rem;
+  flex-wrap: wrap;
+  margin-top: 2.6rem; padding: 1.3rem 1.6rem;
+  background: linear-gradient(120deg, #0E2A52 0%, #061426 100%);
+  border-radius: var(--radius-lg); border: 1px solid #1D3556;
+  color: #E4ECF6;
+}
+.pipeline-total b {
+  font-family: 'Playfair Display', Georgia, serif; font-weight: 500;
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem); color: #FFFFFF;
+}
+.pipeline-total b em {
+  font-style: normal; color: #F2C94C; font-family: var(--font-sans);
+  font-size: .78em; letter-spacing: .02em; margin-left: .35em;
+}
+.pipeline-total span { color: #9FB6CE; font-size: .95rem;
+  font-family: ui-monospace, 'SFMono-Regular', 'Menlo', monospace;
+  letter-spacing: .12em; text-transform: uppercase;
+}
+
+/* ---- contact-aside polish ---------------------------------------------- */
+.contact-aside {
+  position: relative; overflow: hidden;
+}
+.contact-aside::after {
+  content: ""; position: absolute; right: -80px; bottom: -80px;
+  width: 240px; height: 240px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(242,201,76,.18), transparent 65%);
+  pointer-events: none;
+}
+
+/* ---- floor plate under contact form for balance ------------------------ */
+.form-card.contact-layout { box-shadow: 0 18px 40px rgba(0, 55, 115, .10); }
+
+/* ---- pill trust row on hero ("trusted by / built for") ----------------- */
+.trust-row {
+  display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1.5rem;
+}
+.trust-row span {
+  font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border); background: #FFFFFF;
+  border-radius: 100px; padding: .34rem .8rem; font-weight: 600;
+}
+.page-hero .trust-row span {
+  background: rgba(255, 255, 255, .06); color: #C6D6E8;
+  border-color: rgba(255, 255, 255, .15);
+}
+
+/* ---- capability-band: gold divider between items on wide screens ------- */
+@media (min-width: 900px) {
+  .capability-item + .capability-item { padding-left: 1.2rem; }
+}
+
+/* ---- refined develop-item numbering ------------------------------------ */
+.develop-item .develop-num {
+  display: inline-flex; align-items: baseline; gap: .5rem;
+}
+.develop-item .develop-num::before {
+  content: ""; display: inline-block; width: 22px; height: 1px;
+  background: var(--color-gold);
+}
+
+/* ---- market focus list polish ------------------------------------------ */
+.spec-list li { transition: background .25s; padding-inline: .4rem; margin-inline: -.4rem;
+                border-radius: 6px; }
+.spec-list li:hover { background: var(--color-surface); }
+
+/* ---- landowner check icons refined ------------------------------------- */
+.landowner-checks li::marker { content: ""; }
+
+/* ---- footer polish ----------------------------------------------------- */
+.site-footer .wrap { padding-block: 3.4rem 1.4rem; }
+.footer-col h4 { position: relative; padding-bottom: .6rem; }
+.footer-col h4::after {
+  content: ""; position: absolute; left: 0; bottom: 0;
+  width: 22px; height: 2px; background: var(--color-gold); border-radius: 2px;
+}
+
+/* ---- portfolio project-card visual pop --------------------------------- */
+.project-card { transition: transform .3s var(--ease), box-shadow .3s, border-color .3s; }
+.project-card:hover { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(0,0,0,.35);
+                      border-color: #2E6FD4; }
+.project-card::after {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 60% at 90% 100%, rgba(127,212,168,.12), transparent 70%);
+  pointer-events: none;
+}
+
+/* ---- portfolio "why vietnam" kpi row polish ---------------------------- */
+.split .kpi-row {
+  padding: 1.4rem 1.4rem; border-radius: var(--radius-lg);
+  background: #FFFFFF; border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ---- infrastructure / manufacturing hero stat band under dark band ----- */
+.dark-hero-stats {
+  margin-top: -3.5rem; padding: 1.6rem 1.6rem; z-index: 3; position: relative;
+  border-radius: var(--radius-lg);
+  background: #FFFFFF; border: 1px solid var(--color-border);
+  box-shadow: 0 18px 40px rgba(0, 55, 115, .12);
+  display: grid; gap: 1.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.dark-hero-stats > div { position: relative; padding: .1rem 1rem; }
+.dark-hero-stats > div + div::before {
+  content: ""; position: absolute; left: 0; top: 15%; bottom: 15%; width: 1px;
+  background: var(--color-border);
+}
+.dark-hero-stats b { display: block; font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 500; font-size: clamp(1.55rem, 2.6vw, 2rem);
+  color: var(--color-navy); line-height: 1.05; letter-spacing: -.02em; }
+.dark-hero-stats span { display: block; font-size: .8rem; margin-top: .5rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--color-text-muted); }
+@media (max-width: 700px) {
+  .dark-hero-stats { margin-top: 0; }
+  .dark-hero-stats > div + div::before { display: none; }
+}
+
+/* ---- new-energy: alternating platform row backgrounds ----------------- */
+.platform:nth-child(even) { background:
+  linear-gradient(180deg, rgba(10, 100, 170, .03) 0%, transparent 100%);
+  border-radius: var(--radius-lg); margin-inline: -1rem; padding-inline: 1rem;
+}
+@media (max-width: 940px) {
+  .platform:nth-child(even) { margin-inline: 0; padding-inline: 0; }
+}
+
+/* ---- refined shadow tokens for section blocks ------------------------- */
+.raised { box-shadow: 0 14px 34px rgba(0, 55, 115, .09); }
+
+/* ---- refined chip / tag consistency ----------------------------------- */
+.chip, .spec-chips span, .project-tag { transition: transform .2s; }
+.chip:hover, .spec-chips span:hover, .project-tag:hover { transform: translateY(-1px); }
+
+/* ---- polished "closing CTA" (drop-in shared) -------------------------- */
+.cta-band { position: relative; overflow: hidden; }
+.cta-band::before {
+  content: ""; position: absolute; inset: -10% -15%;
+  background:
+    radial-gradient(circle 300px at 15% 30%, rgba(242,201,76,.10), transparent 70%),
+    radial-gradient(circle 260px at 85% 70%, rgba(10,100,170,.18), transparent 70%);
+  pointer-events: none;
+}
+.cta-band .wrap { position: relative; z-index: 1; max-width: 780px; margin-inline: auto; }
+.cta-band .btn-row { justify-content: center; margin-top: 2rem; }
+
+/* ---- landowner two-column polish -------------------------------------- */
+.landowner-grid { align-items: start; }
+.landowner-checks {
+  padding: 1.6rem 1.6rem; border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, .04);
+  border: 1px solid rgba(255, 255, 255, .1);
+}
+
+/* ---- pillar card visual (used on manufacturing services) --------------- */
+.service-pillar .service-list li { transition: background .25s, padding-left .25s; }
+.service-pillar .service-list li:hover { background: rgba(10, 100, 170, .04); padding-left: 1.55rem; }
+
+/* ---- Portfolio Vietnam-projects: dark card polish + emphasis on MW ---- */
+.project-card .project-mw { text-shadow: 0 2px 12px rgba(46, 111, 212, .35); }
+
+/* ---- section reveal (subtle entry) ------------------------------------ */
+.section > .wrap > .gold-rule + .eyebrow + h2,
+.section > .wrap > .section-heading h2 { position: relative; }
+
+/* ---- Balance: constrain lead line-length inside split sections -------- */
+.split > div p { max-width: 52ch; }
+.split .btn-row { margin-top: 1.6rem; }
+
+/* ---- Contact office grid: nicer photo overlay ------------------------- */
+.office-photo::before {
+  content: ""; position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(180deg, transparent 55%, rgba(0, 20, 45, .55) 100%);
+  pointer-events: none;
+}
+
+/* ---- new-energy grid rule: subtle gold marker on eyebrow -------------- */
+.section > .wrap > .eyebrow { position: relative; }
+
+/* ---- Reduced motion friendliness -------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .section-mesh::before { animation: none !important; }
+}
+
+/* ==========================================================================
    16 · MOTION PREFERENCES
    Every animation stops. Because no content depends on animation to become
    visible, the page stays fully readable in this state.
