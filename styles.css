@@ -2121,6 +2121,163 @@ textarea { min-height: 118px; resize: vertical; }
 
 
 /* ==========================================================================
+   22 · ABOUT PAGE ENHANCEMENTS
+   --------------------------------------------------------------------------
+   .mv-pillar        richer Mission / Vision card with numbered tag,
+                     watermark letter and supporting bullet list
+   .about-lead       lead paragraph beneath section h2
+   .leadership-band  soft gradient backdrop behind the team grid
+   .team-tags        expertise chips on each team card
+   .next-cards       three preview cards that replace the button row
+   ========================================================================== */
+.about-lead {
+  max-width: 64ch; margin-top: .3rem;
+  color: var(--color-text-lead);
+  font-size: clamp(1rem, .35vw + .96rem, 1.13rem);
+  line-height: 1.7;
+}
+
+/* --- Mission & Vision pillars --- */
+.mv-pillar {
+  position: relative; overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2.1rem 1.9rem 1.9rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform .3s var(--ease), box-shadow .3s;
+}
+.mv-pillar:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.mv-pillar--mission { border-top-color: var(--color-navy); }
+.mv-pillar--vision  { border-top-color: var(--color-gold); }
+.mv-pillar::after {
+  content: attr(data-mark);
+  position: absolute; right: -.4rem; bottom: -3.2rem;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 13rem; line-height: 1; font-weight: 500;
+  color: rgba(0, 55, 115, .04);
+  pointer-events: none; user-select: none;
+}
+.mv-pillar--vision::after { color: rgba(242, 201, 76, .16); }
+.mv-pillar-tag {
+  display: inline-flex; align-items: baseline; gap: .55rem;
+  font-family: ui-monospace, 'SFMono-Regular', 'Menlo', monospace;
+  font-size: .72rem; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+.mv-pillar-tag b { color: var(--color-blue); font-weight: 800; letter-spacing: .08em; }
+.mv-pillar--vision .mv-pillar-tag b { color: var(--color-gold-ink); }
+.mv-pillar h3 {
+  font-size: clamp(1.28rem, 1.9vw, 1.55rem);
+  margin-bottom: .55rem; letter-spacing: -.018em;
+}
+.mv-pillar p { font-size: .97rem; margin-top: .55rem; }
+.mv-pillar-list {
+  list-style: none; margin: 1.3rem 0 0; padding: 1.1rem 0 0;
+  display: grid; gap: .55rem;
+  border-top: 1px dashed var(--color-border);
+  position: relative; z-index: 1;
+}
+.mv-pillar-list li {
+  position: relative; padding-left: 1.35rem;
+  font-size: .9rem; color: var(--color-text-body); line-height: 1.55;
+}
+.mv-pillar-list li::before {
+  content: ''; position: absolute; left: 0; top: .55rem;
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--color-blue);
+}
+.mv-pillar--vision .mv-pillar-list li::before { background: var(--color-gold); }
+
+/* --- Leadership section --- */
+.leadership-band { position: relative; }
+.leadership-band::before {
+  content: ''; position: absolute; inset: 0 0 auto 0; height: 60%;
+  background: linear-gradient(180deg, #F5F9FE 0%, transparent 100%);
+  z-index: 0; pointer-events: none;
+}
+.leadership-band > .wrap { position: relative; z-index: 1; }
+.leadership-lead {
+  max-width: 62ch; margin-top: .5rem;
+  color: var(--color-text-lead); font-size: 1.02rem; line-height: 1.7;
+}
+.team-tags {
+  display: flex; flex-wrap: wrap; gap: .35rem;
+  margin-top: 1rem; padding-top: 1rem;
+  border-top: 1px dashed var(--color-border);
+}
+.team-tag {
+  font-family: ui-monospace, 'SFMono-Regular', 'Menlo', monospace;
+  font-size: .66rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  padding: .24rem .6rem;
+}
+
+/* balanced 4-tile grid: 1 → 2 → 4 columns */
+.feature-tiles--balanced { grid-template-columns: 1fr; }
+@media (min-width: 620px)  { .feature-tiles--balanced { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1080px) { .feature-tiles--balanced { grid-template-columns: repeat(4, 1fr); } }
+
+/* --- Onward navigation cards --- */
+.next-cards {
+  display: grid; gap: 1.15rem; margin-top: 2.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.next-card {
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: space-between;
+  min-height: 200px;
+  padding: 1.7rem 1.55rem 1.55rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  text-decoration: none; color: inherit;
+  transition: transform .3s var(--ease), box-shadow .3s, border-color .3s;
+}
+.next-card::before {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+  background: var(--color-gold);
+  transform: scaleY(0); transform-origin: top;
+  transition: transform .35s var(--ease);
+}
+.next-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg); border-color: #9FBBD6;
+}
+.next-card:hover::before { transform: scaleY(1); }
+.next-card-eyebrow {
+  font-size: .7rem; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--color-blue);
+  font-weight: 700;
+}
+.next-card h3 { font-size: 1.2rem; margin-top: .5rem; letter-spacing: -.015em; }
+.next-card p { font-size: .9rem; margin-top: .45rem; }
+.next-card-arrow {
+  display: inline-flex; align-items: center; gap: .35rem;
+  margin-top: 1.3rem;
+  font-size: .88rem; font-weight: 600;
+  color: var(--color-blue);
+  transition: gap .25s var(--ease);
+}
+.next-card-arrow svg { width: 14px; height: 14px; }
+.next-card:hover .next-card-arrow { gap: .7rem; }
+
+.next-card--primary {
+  background: linear-gradient(160deg, #003773 0%, #001A38 100%);
+  border-color: #001A38; color: #FFFFFF;
+}
+.next-card--primary .next-card-eyebrow { color: #9FBBD6; }
+.next-card--primary p { color: #C4D3E5; }
+.next-card--primary .next-card-arrow { color: #FFFFFF; }
+.next-card--primary:hover { border-color: var(--color-gold); }
+
+
+/* ==========================================================================
    16 · MOTION PREFERENCES
    Every animation stops. Because no content depends on animation to become
    visible, the page stays fully readable in this state.
