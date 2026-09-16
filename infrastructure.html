@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#003773">
+
+  <title>Infrastructure — PacinfraX Corporation</title>
+  <meta name="description" content="A 640-acre integrated green campus scaling to 500 MW — Tier III+ ready, PUE below 1.2, powered by on-site renewable generation, battery storage and an intelligent microgrid.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23FFFFFF'/%3E%3Cpath d='M20 8 8 15v18l12-7z' fill='%230A64AA'/%3E%3Cpath d='M28 8v18l12 7V15z' fill='%230A64AA'/%3E%3Cpath d='M28 28v12l12 7V35z' fill='%23003773'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- ═══ SITE NAVIGATION ════════════════════════════════════════════════
+     The drawer is a checkbox + label. No JavaScript opens or closes it.
+     ════════════════════════════════════════════════════════════════════ -->
+<nav class="site-nav">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation menu">
+
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 1264 2046" width="30" height="49" aria-hidden="true"><path fill="#0A64AA" d="M8.26,1354.25C8.52,935.13 8.63,911.96 10.32,902.00C20.80,840.54 50.66,790.71 98.43,754.98C105.84,749.44 515.99,496.00 517.55,496.00C517.81,496.00 517.90,695.91 517.76,940.25L517.50,1384.50L515.21,1396.00C503.65,1454.18 473.91,1502.65 429.50,1535.69C421.38,1541.73 10.11,1796.00 8.46,1796.00C8.19,1796.00 8.10,1597.21 8.26,1354.25ZM1254.14,1245.00C1248.78,1227.35 1231.68,1203.67 1214.29,1189.83C1210.80,1187.06 1077.80,1103.21 918.73,1003.49L629.50,822.19L629.25,415.10C629.11,191.19 629.17,8.00 629.39,8.00C630.38,8.00 1198.20,328.75 1203.50,332.30C1206.80,334.51 1214.06,340.86 1219.63,346.41C1237.31,364.03 1247.90,383.48 1253.72,409.03C1255.30,415.97 1255.44,442.14 1255.72,781.00C1256.09,1225.00 1256.00,1251.14 1254.14,1245.00Z"/><path fill="#003773" d="M970.58,1877.49C814.42,1789.32 683.35,1714.82 679.32,1711.94C659.83,1698.00 642.95,1674.69 635.17,1651.00C629.09,1632.47 629.61,1664.38 629.28,1287.24L628.98,943.97L637.24,949.14C742.50,1014.97 1199.19,1301.41 1203.50,1304.30C1212.73,1310.49 1228.94,1327.24 1235.59,1337.48C1245.78,1353.16 1252.65,1372.13 1254.96,1390.97C1256.18,1400.89 1256.46,2038.06 1255.25,2037.90C1254.84,2037.85 1126.73,1965.66 970.58,1877.49Z"/></svg>
+      <span class="brand-text">
+        <span class="brand-name">PACINFRAX</span>
+        <i class="brand-suffix">CORPORATION</i>
+      </span>
+    </a>
+
+    <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="infrastructure.html" class="is-active">Infrastructure</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="manufacturing.html">Manufacturing</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="new-energy.html">New Energy</a></li>
+        <li><a class="nav-cta" href="contact.html">Contact</a></li>
+    </ul>
+
+    <label class="nav-burger" for="nav-toggle" aria-hidden="true"><span></span></label>
+  </div>
+
+  <div class="nav-drawer" id="nav-drawer">
+    <div class="nav-drawer-inner">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="infrastructure.html" class="is-active">Infrastructure</a>
+        <a href="sustainability.html">Sustainability</a>
+        <a href="manufacturing.html">Manufacturing</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="new-energy.html">New Energy</a>
+        <a class="is-cta" href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══ PAGE HERO ══════════════════════════════════════════════════════ -->
+<section class="page-hero">
+  <div class="wrap page-hero-grid">
+
+    <div class="page-hero-copy">
+      <nav class="page-hero-crumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> &nbsp;/&nbsp; Infrastructure
+      </nav>
+      <span class="page-hero-pill">Infrastructure · Data Center</span>
+      <h1>The Green Data Center. Power Unleashed.</h1>
+      <p>PacinfraX integrates a state-of-the-art data center with on-site generation, battery energy storage and an intelligent microgrid &mdash; engineered for the intensive demands of artificial intelligence and high-performance computing.</p>
+      <div class="btn-row">
+        <a class="btn-light" href="#facility">See the specifications</a>
+        <a class="btn-ghost" href="contact.html">Talk to us</a>
+      </div>
+    </div>
+
+    <div class="page-hero-art"><svg viewBox="0 0 620 460" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <g stroke="#2F4A6E" stroke-width="1.1" fill="none">
+    <path class="sv-dash" d="M0 140 H110" stroke-dasharray="7 7"/>
+    <path class="sv-dash" d="M0 230 H110" stroke-dasharray="7 7"/>
+    <path class="sv-dash" d="M0 320 H110" stroke-dasharray="7 7"/>
+    <path d="M110 140 L164 230 M110 230 H164 M110 320 L164 230"/>
+  </g>
+  <circle class="sv-ring-a" cx="182" cy="230" r="22" fill="none" stroke="#5B8FC9" stroke-width="1.2"/>
+  <circle cx="182" cy="230" r="16" fill="#070E1A" stroke="#6FA8DC" stroke-width="1.8"/>
+  <circle class="sv-glow" cx="182" cy="230" r="6" fill="#CFE2F7"/>
+
+  <rect x="228" y="86" width="358" height="288" rx="14" fill="none" stroke="#3E6FA8" stroke-width="1.4"/>
+  <text x="250" y="116" font-family="ui-monospace,Menlo,monospace" font-size="12.5"
+        letter-spacing="2.2" fill="#CFE2F7">AI COMPUTE · ENERGIZED</text>
+  <text x="250" y="138" font-family="ui-monospace,Menlo,monospace" font-size="12.5"
+        letter-spacing="2.2" fill="#E3C05A">50–500 MW · OFF-GRID</text>
+
+  <g><rect class="sv-seg" x="252" y="168" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.00s"/><rect class="sv-seg" x="252" y="183" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.18s"/><rect class="sv-seg" x="252" y="198" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.36s"/><rect class="sv-seg" x="252" y="213" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.54s"/><rect class="sv-seg" x="252" y="228" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.72s"/><rect class="sv-seg" x="252" y="243" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.90s"/><rect class="sv-seg" x="252" y="258" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:1.08s"/><rect class="sv-seg" x="320" y="168" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.00s"/><rect class="sv-seg" x="320" y="183" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.18s"/><rect class="sv-seg" x="320" y="198" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.36s"/><rect class="sv-seg" x="320" y="213" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.54s"/><rect class="sv-seg" x="320" y="228" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.72s"/><rect class="sv-seg" x="320" y="243" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.90s"/><rect class="sv-seg" x="320" y="258" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:1.08s"/><rect class="sv-seg" x="388" y="168" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.00s"/><rect class="sv-seg" x="388" y="183" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.18s"/><rect class="sv-seg" x="388" y="198" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.36s"/><rect class="sv-seg" x="388" y="213" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.54s"/><rect class="sv-seg" x="388" y="228" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.72s"/><rect class="sv-seg" x="388" y="243" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.90s"/><rect class="sv-seg" x="388" y="258" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:1.08s"/><rect class="sv-seg" x="456" y="168" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.00s"/><rect class="sv-seg" x="456" y="183" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.18s"/><rect class="sv-seg" x="456" y="198" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.36s"/><rect class="sv-seg" x="456" y="213" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.54s"/><rect class="sv-seg" x="456" y="228" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.72s"/><rect class="sv-seg" x="456" y="243" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.90s"/><rect class="sv-seg" x="456" y="258" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:1.08s"/><rect class="sv-seg" x="524" y="168" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.00s"/><rect class="sv-seg" x="524" y="183" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.18s"/><rect class="sv-seg" x="524" y="198" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.36s"/><rect class="sv-seg" x="524" y="213" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.54s"/><rect class="sv-seg" x="524" y="228" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.72s"/><rect class="sv-seg" x="524" y="243" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:0.90s"/><rect class="sv-seg" x="524" y="258" width="46" height="7" rx="2" fill="#6FA8DC" style="animation-delay:1.08s"/></g>
+
+  <path class="sv-dash" d="M586 230 H620" stroke="#2F4A6E" stroke-width="1.1"
+        fill="none" stroke-dasharray="6 6"/>
+</svg></div>
+
+  </div>
+</section>
+
+<!-- ═══ CAMPUS AT A GLANCE ═════════════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="stat-row">
+      <div><b>640 acres</b><span>integrated green operations campus, Phase 1</span></div>
+      <div><b>500 MW</b><span>target capacity at Phase 4</span></div>
+      <div><b>Tier III+</b><span>ready, concurrently maintainable</span></div>
+      <div><b>80%</b><span>reduction in carbon emissions</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ THE CONSTRAINT ═════════════════════════════════════════════════ -->
+<section class="section rule" id="constraint">
+  <div class="wrap">
+    <div class="gold-rule"></div>
+    <div class="eyebrow">The Constraint</div>
+    <h2>Capital isn&rsquo;t scarce. Land isn&rsquo;t scarce. Power is.</h2>
+    <p class="lead">Every constraint that used to govern data center development has been replaced
+       by a single one. Sites that can be energized are the asset; everything else is procurement.</p>
+
+    <div class="constraint-grid">
+      <div class="constraint-card">
+        <div class="k">Shortfall</div>
+        <b>9.3 &rarr; 45 GW</b>
+        <p>The projected US data center power shortfall, widening from 2026 to 2028.</p>
+      </div>
+      <div class="constraint-card">
+        <div class="k">Queue</div>
+        <b>474 GW</b>
+        <p>Requested interconnection in ERCOT, against an all-time system peak of 85.5 GW.</p>
+      </div>
+      <div class="constraint-card">
+        <div class="k">Attrition</div>
+        <b>74% withdrew</b>
+        <p>Of 294 GW studied in PJM between 2020 and 2026, only 23 GW ever reached service.</p>
+      </div>
+      <div class="constraint-card">
+        <div class="k">Scarcity</div>
+        <b>2.3% vacancy</b>
+        <p>North American colocation vacancy at a record low, against data center electricity
+           demand set to double by 2030.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DELIVERY MECHANISM ═════════════════════════════════════════════ -->
+<section class="section rule" id="delivery">
+  <div class="wrap split">
+    <div>
+      <div class="gold-rule"></div>
+      <div class="eyebrow">Delivery Mechanism</div>
+      <h2>Generation is not a second business. It&rsquo;s how the data center gets built.</h2>
+      <p>PacinfraX does not develop merchant power projects. Gas, solar and storage exist on our
+         sites for one purpose: to energize compute on our schedule instead of the interconnection
+         queue&rsquo;s.</p>
+      <p>Because the campus does not depend on a grid connection to operate, construction begins
+         when equipment and permits allow &mdash; not when a transmission study clears.</p>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-card stack-card--firm">
+        <span class="chip">Firm</span>
+        <h3>Natural gas trigeneration</h3>
+        <p>Carries round-the-clock baseload. Recovered exhaust heat drives absorption cooling,
+           cutting the electrical load that cooling would otherwise draw.</p>
+      </div>
+      <div class="stack-card stack-card--var">
+        <span class="chip">Variable</span>
+        <h3>Solar and wind</h3>
+        <p>Daytime and seasonal generation sited beside the load it serves, displacing fuel cost
+           rather than selling into the market.</p>
+      </div>
+      <div class="stack-card stack-card--bridge">
+        <span class="chip">Bridging</span>
+        <h3>Battery energy storage</h3>
+        <p>Ride-through, load-following against AI demand swings, and renewable firming. Enters the
+           ancillary market once the campus is interconnected.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HPC COMPLEX SPECIFICATIONS ═════════════════════════════════════ -->
+<section class="section rule" id="facility">
+  <div class="wrap">
+    <div class="gold-rule"></div>
+    <div class="eyebrow">The PacinfraX HPC Complex</div>
+    <h2>Engineered for excellence.</h2>
+    <p class="lead">Where uncompromising reliability meets sustainable design.
+       Optimized for performance, powered by eco-innovation.</p>
+
+    <div class="metric-panel">
+      <div><b>500 MW</b><span>Target capacity</span></div>
+      <div><b>99%+</b><span>Uptime SLA</span></div>
+      <div><b>&lt; 1.2</b><span>PUE</span></div>
+      <div><b>400 Gbps</b><span>Interconnect bandwidth</span></div>
+    </div>
+
+    <div class="spec-columns">
+      <div class="card">
+        <div class="card-label">Infrastructure</div>
+        <h3>Site and standard</h3>
+        <ul>
+          <li><b>Area</b> &mdash; 640 acres of integrated green operations campus (Phase 1)</li>
+          <li><b>Design standard</b> &mdash; Tier III+ ready, modular infrastructure design</li>
+          <li><b>Operational capacity</b> &mdash; 500 MW target capacity (Phase 4)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-label">Technology</div>
+        <h3>Compute and cooling</h3>
+        <ul>
+          <li><b>Compute</b> &mdash; high-density GPU and CPU clusters for AI and HPC</li>
+          <li><b>Cooling</b> &mdash; AI-optimized systems for maximum efficiency</li>
+          <li><b>Energy</b> &mdash; smart microgrid with advanced energy management</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-label">Standards</div>
+        <h3>Security and compliance</h3>
+        <ul>
+          <li><b>Green standards</b> &mdash; aligned with global sustainability best practices</li>
+          <li><b>Data security</b> &mdash; enterprise-grade data protection practices</li>
+          <li><b>Energy management</b> &mdash; advanced energy efficiency and control</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card"><h3>Tier III+ resiliency</h3>
+        <p>Designed for concurrent maintainability, ensuring 99%+ uptime for mission-critical operations.</p></div>
+      <div class="card"><h3>Industry-leading efficiency</h3>
+        <p>Market-leading PUE below 1.2 cuts cost, boosts performance and reduces environmental impact.</p></div>
+      <div class="card"><h3>High-speed fabric network</h3>
+        <p>A redundant, low-latency backbone connects every rack for data-intensive computing,
+           with dual optical paths for maximum uptime.</p></div>
+      <div class="card"><h3>Modular and scalable design</h3>
+        <p>Flexible architecture that scales in phases toward a target IT load of 500 MW as demand materializes.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WORKLOADS ══════════════════════════════════════════════════════ -->
+<section class="section rule" id="workloads">
+  <div class="wrap">
+    <div class="gold-rule"></div>
+    <div class="eyebrow">Solutions &amp; Services</div>
+    <h2>Empowering next-gen compute</h2>
+    <p class="lead">Green HPC infrastructure built to accelerate innovation and secure an edge.</p>
+
+    <div class="grid grid-2">
+      <div class="card"><div class="card-label">01</div>
+        <h3>AI training &amp; model development</h3>
+        <p>High-density GPU clusters for maximum-throughput training of the most complex models.</p></div>
+      <div class="card"><div class="card-label">02</div>
+        <h3>Generative AI &amp; real-time inference</h3>
+        <p>Ultra-responsive infrastructure for deploying models and serving real-time predictions at scale.</p></div>
+      <div class="card"><div class="card-label">03</div>
+        <h3>Big data analytics &amp; simulation</h3>
+        <p>The power to run large-scale simulations and data analysis with a clear conscience.</p></div>
+      <div class="card"><div class="card-label">04</div>
+        <h3>Computational science &amp; engineering</h3>
+        <p>Advanced modeling and simulation for system-optimization R&amp;D, powered by green infrastructure.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SUSTAINABLE ADVANTAGE ══════════════════════════════════════════ -->
+<section class="section rule" id="model">
+  <div class="wrap split">
+    <div>
+      <div class="gold-rule"></div>
+      <div class="eyebrow">Sustainable Advantage</div>
+      <h2>The compute-integrated green energy model</h2>
+      <p>By co-locating high-performance computing with a dedicated, resilient renewable energy
+         source, we eliminate the grid dependency and carbon intensity of traditional facilities.</p>
+      <p>We don't just use green power. We generate it, store it, and manage it intelligently.</p>
+    </div>
+    <div class="grid" style="margin-top:0">
+      <div class="card"><h3>Superior performance</h3>
+        <p>Uninterrupted, clean power for the most demanding HPC workloads.</p></div>
+      <div class="card"><h3>Optimized cost</h3>
+        <p>Reduced energy volatility and high efficiency lead to predictable, lower operating costs.</p></div>
+      <div class="card"><h3>Environmental impact</h3>
+        <p>Supports sustainability goals and reduces indirect carbon emissions associated with energy use.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MARKET FOCUS ═══════════════════════════════════════════════════ -->
+<section class="section rule" id="market">
+  <div class="wrap">
+    <div class="gold-rule"></div>
+    <div class="eyebrow">Market Focus</div>
+    <h2>Why we anchor in low-cost energy markets</h2>
+    <p class="lead">Texas has the demand, the fuel and the cost structure. What it lacks is
+       deliverable power &mdash; which is precisely the problem we are built to solve.</p>
+
+    <ul class="spec-list">
+      <li><b>Power cost</b><span>Texas commercial electricity averages roughly 7 to 9 cents per
+        kilowatt-hour, materially below Northern Virginia, Chicago and the Northeast.</span></li>
+      <li><b>Fuel access</b><span>Eagle Ford and South Texas gas supply supports on-site generation
+        at scale, with pipeline infrastructure already serving the Gulf Coast and export
+        markets.</span></li>
+      <li><b>Regulatory posture</b><span>A single-state grid with a competitive market structure,
+        and an emerging federal framework that treats off-grid data centers as a distinct
+        category.</span></li>
+      <li><b>Cost structure</b><span>Land, labor and construction costs below primary markets, with
+        no state income tax supporting recruitment of operating staff.</span></li>
+      <li><b>Demand</b><span>ERCOT&rsquo;s own long-term forecast anticipates load nearly tripling
+        within the decade. The tenants are already here.</span></li>
+      <li><b>Second continent</b><span>Vietnam offers construction at a mid-range of $7.2M per MW
+        with moderate cost inflation, a deep industrial base, and government incentives for
+        high-tech projects &mdash; diversifying both delivery risk and market exposure.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══ HOW WE DEVELOP ═════════════════════════════════════════════════ -->
+<section class="section rule" id="develop">
+  <div class="wrap">
+    <div class="gold-rule"></div>
+    <div class="eyebrow">How We Develop</div>
+    <h2>A consistent model across every site we pursue</h2>
+
+    <div class="develop-grid">
+      <div class="develop-item">
+        <div class="develop-num">01</div>
+        <h3>We lease land, we don&rsquo;t buy it</h3>
+        <p>Landowners retain title and take a continuing interest in what gets built. Long-term
+           ground leases with participation, rather than a purchase and a handshake.</p>
+      </div>
+      <div class="develop-item">
+        <div class="develop-num">02</div>
+        <h3>Gas access decides the site</h3>
+        <p>Distance to a pipeline tap governs both capital cost and fuel price over a thirty-five
+           year operating life. We site against the tap, not the substation.</p>
+      </div>
+      <div class="develop-item">
+        <div class="develop-num">03</div>
+        <h3>Off-grid first, grid second</h3>
+        <p>Campuses are engineered to run islanded. Interconnection, when it arrives, adds
+           arbitrage revenue &mdash; it never gates commercial operation.</p>
+      </div>
+      <div class="develop-item">
+        <div class="develop-num">04</div>
+        <h3>Phased to demand</h3>
+        <p>50 MW at a time, with land, generation and substation capacity reserved for the phases
+           that follow.</p>
+      </div>
+      <div class="develop-item">
+        <div class="develop-num">05</div>
+        <h3>Water settled up front</h3>
+        <p>Cooling supply and community impact are resolved before capital is committed, not at the
+           permit hearing. Closed-loop design keeps consumption near zero.</p>
+      </div>
+      <div class="develop-item">
+        <div class="develop-num">06</div>
+        <h3>Built for AI density</h3>
+        <p>Liquid cooling, high-density power distribution and structural loading specified for GPU
+           racks from the outset &mdash; not retrofitted later.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ LANDOWNER CALL TO ACTION ═══════════════════════════════════════ -->
+<section class="landowner" id="landowner">
+  <div class="wrap landowner-grid">
+    <div>
+      <div class="hierarchy-eyebrow">Landowners</div>
+      <h2>If you own land near a gas pipeline in Texas, we should talk.</h2>
+      <p>We work with landowners who would rather participate in what gets built than sell and walk
+         away. Long-term ground leases, title retained, and a continuing interest in the asset.</p>
+      <div class="btn-row">
+        <a class="btn-light" href="contact.html">Start a conversation</a>
+        <a class="btn-ghost" href="tel:+16234718936">+1 623 471 8936</a>
+      </div>
+    </div>
+    <div>
+      <ul class="landowner-checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#7FD4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5" stroke="#2C4A6E"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span><strong style="color:#FFF">100 acres or more</strong>, with contiguous
+          acreage available for later phases</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#7FD4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5" stroke="#2C4A6E"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>A <strong style="color:#FFF">gas transmission line</strong> crossing or
+          adjacent to the parcel</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#7FD4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5" stroke="#2C4A6E"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Outside a <strong style="color:#FFF">FEMA Special Flood Hazard
+          Area</strong></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#7FD4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5" stroke="#2C4A6E"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Fiber within reasonable reach, with route diversity available</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#7FD4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5" stroke="#2C4A6E"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Outside city limits and extraterritorial jurisdiction where
+          possible</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#7FD4A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5" stroke="#2C4A6E"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Within about an hour of a metropolitan workforce</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ONWARD NAVIGATION ══════════════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="page-next">
+      <a class="btn btn-secondary" href="new-energy.html">New Energy</a>
+      <a class="btn btn-secondary" href="about.html">About</a>
+      <a class="btn btn-primary" href="contact.html">Talk to PacinfraX</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ FOOTER ═════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+
+      <div class="footer-col footer-brand">
+        <a class="brand" href="index.html" aria-label="PacinfraX Corporation home">
+          <svg viewBox="0 0 1264 2046" width="30" height="49" aria-hidden="true"><path fill="#0A64AA" d="M8.26,1354.25C8.52,935.13 8.63,911.96 10.32,902.00C20.80,840.54 50.66,790.71 98.43,754.98C105.84,749.44 515.99,496.00 517.55,496.00C517.81,496.00 517.90,695.91 517.76,940.25L517.50,1384.50L515.21,1396.00C503.65,1454.18 473.91,1502.65 429.50,1535.69C421.38,1541.73 10.11,1796.00 8.46,1796.00C8.19,1796.00 8.10,1597.21 8.26,1354.25ZM1254.14,1245.00C1248.78,1227.35 1231.68,1203.67 1214.29,1189.83C1210.80,1187.06 1077.80,1103.21 918.73,1003.49L629.50,822.19L629.25,415.10C629.11,191.19 629.17,8.00 629.39,8.00C630.38,8.00 1198.20,328.75 1203.50,332.30C1206.80,334.51 1214.06,340.86 1219.63,346.41C1237.31,364.03 1247.90,383.48 1253.72,409.03C1255.30,415.97 1255.44,442.14 1255.72,781.00C1256.09,1225.00 1256.00,1251.14 1254.14,1245.00Z"/><path fill="#003773" d="M970.58,1877.49C814.42,1789.32 683.35,1714.82 679.32,1711.94C659.83,1698.00 642.95,1674.69 635.17,1651.00C629.09,1632.47 629.61,1664.38 629.28,1287.24L628.98,943.97L637.24,949.14C742.50,1014.97 1199.19,1301.41 1203.50,1304.30C1212.73,1310.49 1228.94,1327.24 1235.59,1337.48C1245.78,1353.16 1252.65,1372.13 1254.96,1390.97C1256.18,1400.89 1256.46,2038.06 1255.25,2037.90C1254.84,2037.85 1126.73,1965.66 970.58,1877.49Z"/></svg>
+          <span>
+            <span class="brand-name">PACINFRAX</span><br>
+            <i class="brand-suffix">CORPORATION</i>
+          </span>
+        </a>
+        <p>Green data centers for AI and high-performance computing &mdash; integrated on-site generation, storage and an intelligent microgrid.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="infrastructure.html">Infrastructure</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="manufacturing.html">Manufacturing</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="new-energy.html">New Energy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact">
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+16234718936">+1 623 471 8936</a>
+          </div>
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:support@pacinfrax.com">support@pacinfrax.com</a>
+          </div>
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon &ndash; Fri, 9:00 AM &ndash; 6:00 PM (PT)</span>
+          </div>
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <address>19900 MacArthur Boulevard, Suite 915<br>Irvine, CA 92612, USA</address>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Global Offices</h4>
+        <ul class="footer-offices">
+          <li><b>Irvine, California</b><span>Headquarters &mdash; capital &amp; strategy</span></li>
+          <li><b>McCamey, Texas</b><span>Data center campus &mdash; 24/7 operations</span></li>
+          <li><b>Singapore</b><span>138 Robinson Road, #24-01 Oxley Tower</span></li>
+          <li><b>Hong Kong</b><span>Unit 1411, 14/F, Cosco Tower, Sheung Wan</span></li>
+          <li><b>Ho Chi Minh City</b><span>549A Huynh Tan Phat Road, Tan Thuan Ward</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 PacinfraX Corporation. All rights reserved.</span>
+      <nav aria-label="Legal">
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="sustainability.html">Sustainability</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Progressive enhancement only: closes the drawer after a link is tapped.
+     Navigation works identically without it. -->
+<script>
+(function () {
+  var toggle = document.getElementById('nav-toggle');
+  var drawer = document.getElementById('nav-drawer');
+  if (!toggle || !drawer) return;
+  drawer.addEventListener('click', function (e) {
+    if (e.target.closest('a')) toggle.checked = false;
+  });
+})();
+</script>
+
+</body>
+</html>

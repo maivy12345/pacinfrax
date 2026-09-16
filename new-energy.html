@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#003773">
+
+  <title>New Energy Technologies — PacinfraX Corporation</title>
+  <meta name="description" content="The generation, storage, hydrogen, carbon and grid equipment technologies PacinfraX tracks and deploys across its own infrastructure.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23FFFFFF'/%3E%3Cpath d='M20 8 8 15v18l12-7z' fill='%230A64AA'/%3E%3Cpath d='M28 8v18l12 7V15z' fill='%230A64AA'/%3E%3Cpath d='M28 28v12l12 7V35z' fill='%23003773'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- ═══ SITE NAVIGATION ════════════════════════════════════════════════
+     The drawer is a checkbox + label. No JavaScript opens or closes it.
+     ════════════════════════════════════════════════════════════════════ -->
+<nav class="site-nav">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation menu">
+
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 1264 2046" width="30" height="49" aria-hidden="true"><path fill="#0A64AA" d="M8.26,1354.25C8.52,935.13 8.63,911.96 10.32,902.00C20.80,840.54 50.66,790.71 98.43,754.98C105.84,749.44 515.99,496.00 517.55,496.00C517.81,496.00 517.90,695.91 517.76,940.25L517.50,1384.50L515.21,1396.00C503.65,1454.18 473.91,1502.65 429.50,1535.69C421.38,1541.73 10.11,1796.00 8.46,1796.00C8.19,1796.00 8.10,1597.21 8.26,1354.25ZM1254.14,1245.00C1248.78,1227.35 1231.68,1203.67 1214.29,1189.83C1210.80,1187.06 1077.80,1103.21 918.73,1003.49L629.50,822.19L629.25,415.10C629.11,191.19 629.17,8.00 629.39,8.00C630.38,8.00 1198.20,328.75 1203.50,332.30C1206.80,334.51 1214.06,340.86 1219.63,346.41C1237.31,364.03 1247.90,383.48 1253.72,409.03C1255.30,415.97 1255.44,442.14 1255.72,781.00C1256.09,1225.00 1256.00,1251.14 1254.14,1245.00Z"/><path fill="#003773" d="M970.58,1877.49C814.42,1789.32 683.35,1714.82 679.32,1711.94C659.83,1698.00 642.95,1674.69 635.17,1651.00C629.09,1632.47 629.61,1664.38 629.28,1287.24L628.98,943.97L637.24,949.14C742.50,1014.97 1199.19,1301.41 1203.50,1304.30C1212.73,1310.49 1228.94,1327.24 1235.59,1337.48C1245.78,1353.16 1252.65,1372.13 1254.96,1390.97C1256.18,1400.89 1256.46,2038.06 1255.25,2037.90C1254.84,2037.85 1126.73,1965.66 970.58,1877.49Z"/></svg>
+      <span class="brand-text">
+        <span class="brand-name">PACINFRAX</span>
+        <i class="brand-suffix">CORPORATION</i>
+      </span>
+    </a>
+
+    <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>
+        <li><a href="sustainability.html">Sustainability</a></li>
+        <li><a href="manufacturing.html">Manufacturing</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="new-energy.html" class="is-active">New Energy</a></li>
+        <li><a class="nav-cta" href="contact.html">Contact</a></li>
+    </ul>
+
+    <label class="nav-burger" for="nav-toggle" aria-hidden="true"><span></span></label>
+  </div>
+
+  <div class="nav-drawer" id="nav-drawer">
+    <div class="nav-drawer-inner">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="infrastructure.html">Infrastructure</a>
+        <a href="sustainability.html">Sustainability</a>
+        <a href="manufacturing.html">Manufacturing</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="new-energy.html" class="is-active">New Energy</a>
+        <a class="is-cta" href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══ PAGE HERO ══════════════════════════════════════════════════════ -->
+<section class="page-hero page-hero--energy">
+  <div class="wrap page-hero-grid">
+
+    <div class="page-hero-copy">
+      <nav class="page-hero-crumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> &nbsp;/&nbsp; New Energy
+      </nav>
+      <span class="page-hero-pill">New Energy · Technologies</span>
+      <h1>Proven new energy technologies, not science projects.</h1>
+      <p>Emerging generation and storage technologies, evaluated for deployment across our own sites before they are offered to third parties.</p>
+      <div class="btn-row">
+        <a class="btn-light" href="#stack">See the technology map</a>
+        <a class="btn-ghost" href="contact.html">Talk to us</a>
+      </div>
+    </div>
+
+    <div class="page-hero-art"><svg viewBox="0 0 620 460" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <g class="sv-spin-slow" style="transform-box:view-box;transform-origin:330px 220px">
+    <ellipse cx="330" cy="220" rx="180" ry="66" fill="none" stroke="#33496A"
+             stroke-width="1.1" stroke-dasharray="5 8"/>
+    <circle cx="150" cy="220" r="6" fill="#9EC2E8"/>
+  </g>
+  <g class="sv-spin-rev" style="transform-box:view-box;transform-origin:330px 220px">
+    <ellipse cx="330" cy="220" rx="164" ry="58" fill="none" stroke="#2C4363"
+             stroke-width="1.1" stroke-dasharray="5 8" transform="rotate(-32 330 220)"/>
+    <circle cx="492" cy="252" r="5" fill="#7FD4A8"/>
+  </g>
+  <g class="sv-orbit-dash" style="transform-origin:330px 220px">
+    <ellipse cx="330" cy="220" rx="140" ry="140" fill="none" stroke="#22354E"
+             stroke-width="1" stroke-dasharray="3 11" opacity=".7"/>
+  </g>
+
+  <polygon points="330.0,142.0 397.5,181.0 397.5,259.0 330.0,298.0 262.5,259.0 262.5,181.0" fill="none" stroke="#5B8FC9" stroke-width="1.7"/>
+  <polygon points="330.0,166.0 376.8,193.0 376.8,247.0 330.0,274.0 283.2,247.0 283.2,193.0" fill="#0C2547" stroke="#7FA8DC" stroke-width="1.5"/>
+  <circle class="sv-ring-a" cx="330" cy="220" r="40" fill="none" stroke="#7FD4A8" stroke-width="1.1"/>
+  <circle class="sv-glow" cx="330" cy="220" r="10" fill="#7FD4A8"/>
+
+  <g>
+    <circle class="sv-float" cx="188" cy="358" r="3" fill="#7FA8DC"/>
+    <circle class="sv-float" cx="252" cy="392" r="2.4" fill="#7FD4A8" style="animation-delay:1.2s"/>
+    <circle class="sv-float" cx="398" cy="376" r="2.8" fill="#7FA8DC" style="animation-delay:2.4s"/>
+    <circle class="sv-float" cx="462" cy="344" r="2.4" fill="#7FA8DC" style="animation-delay:.7s"/>
+    <circle class="sv-float" cx="330" cy="404" r="3.2" fill="#7FD4A8" style="animation-delay:3.1s"/>
+  </g>
+</svg></div>
+
+  </div>
+</section>
+
+<!-- ═══ WHY PROVEN TECHNOLOGY ══════════════════════════════════════════ -->
+<section class="section rule" id="why">
+  <div class="wrap">
+    <div class="gold-rule"></div>
+    <div class="eyebrow">Why we deploy proven technology</div>
+    <h2>Proven technologies, deployed today</h2>
+    <p class="lead">We assemble state-of-the-art energy technologies into a deployable stack for
+       critical infrastructure. We select what is commercially proven rather than what is promising,
+       integrate it into a single engineered system, and put it to work where demand for power is
+       growing faster than the grid can serve it.</p>
+    <p>Our sharpest focus is the AI data center build-out &mdash; the most explosive infrastructure
+       category in the world today, and the most power-constrained. For a data center, electricity
+       is the single largest operating cost and the primary determinant of whether a project clears
+       its return threshold. Every point of efficiency gained, every megawatt generated behind the
+       meter instead of purchased, and every month saved waiting on an interconnection flows
+       straight through to operating margin and IRR.</p>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <h3>A deployable technology stack</h3>
+        <p>Eight commercially proven platforms &mdash; modular nuclear, green hydrogen, advanced
+           geothermal, multi-day and solid-state storage, waste heat recovery and AI-managed grids
+           &mdash; selected, integrated and engineered to operate as one system rather than eight
+           procurements.</p>
+      </div>
+      <div class="why-card">
+        <h3>Built for the AI build-out</h3>
+        <p>AI compute is scaling faster than transmission can be built, and power has become the
+           binding constraint on the sector. We energize campuses on their own schedule, so capacity
+           comes online when the compute is ready rather than when the queue clears.</p>
+      </div>
+      <div class="why-card">
+        <h3>Efficiency that compounds</h3>
+        <p>Lower delivered cost per megawatt-hour, recovered waste heat, avoided curtailment and
+           reduced grid exposure are not separate wins. Across a thirty-year asset life they compound
+           into materially stronger project economics and a better return profile.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TECHNOLOGY PLATFORMS ════════════════════════════ -->
+<section class="section rule" id="stack">
+  <div class="wrap">
+    <div class="gold-rule"></div>
+    <div class="eyebrow">Technology Stack</div>
+    <h2>Eight platforms. One objective: deliverable power.</h2>
+    <p class="lead">Each technology below is commercially proven or at first-of-a-kind
+       deployment today. We integrate them selectively &mdash; matched to site, load profile,
+       fuel access and capital structure.</p>
+    <article class="platform">
+      <div class="platform-copy">
+        <div class="platform-index"><b>01</b> &mdash; Efficiency</div>
+        <h3>Waste Heat to Power</h3>
+        <p>Every thermal process discards heat. Most of it is too low-grade for a conventional steam turbine and is simply rejected to atmosphere. The Organic Rankine Cycle recovers it.</p>
+        <p>An ORC uses a working fluid with a boiling point well below water&rsquo;s, sealed in a closed loop. Waste heat evaporates the fluid into pressurized gas, the gas drives a turbine, and the fluid is condensed and recirculated. This closes the loop on the rest of the stack: reactor and turbine reject heat, data center cooling loops and geothermal return flows all become generation.</p>
+        <div class="spec-chips"><span>Low-grade heat becomes power</span><span>Zero additional fuel</span><span>Closed loop, sealed working fluid</span></div>
+        <p class="market-note">Output added <b>without burning a single additional unit of fuel</b>.</p>
+      </div>
+      <div class="platform-viz">
+        <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <circle cx="210" cy="130" r="76" fill="none" stroke="#33496A" stroke-width="1.4"/>
+  <circle class="tv-flow" cx="210" cy="130" r="76" fill="none" stroke="#E3C05A" stroke-width="2.2"/>
+  <g><circle cx="210" cy="54" r="21" fill="#0A1E3A" stroke="#3E6FA8" stroke-width="1.5"/><text x="210" y="57" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="7" fill="#9EC2E8">EVAP</text></g><g><circle cx="286" cy="130" r="21" fill="#0A1E3A" stroke="#3E6FA8" stroke-width="1.5"/><text x="286" y="133" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="7" fill="#9EC2E8">TURB</text></g><g><circle cx="210" cy="206" r="21" fill="#0A1E3A" stroke="#3E6FA8" stroke-width="1.5"/><text x="210" y="209" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="7" fill="#9EC2E8">COND</text></g><g><circle cx="134" cy="130" r="21" fill="#0A1E3A" stroke="#3E6FA8" stroke-width="1.5"/><text x="134" y="133" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="7" fill="#9EC2E8">PUMP</text></g>
+  <g class="tv-spin"><circle cx="286" cy="130" r="9" fill="none" stroke="#7FD4A8" stroke-width="1.6"/>
+     <path d="M286 121v18M277 130h18" stroke="#7FD4A8" stroke-width="1.4"/></g>
+  <path class="tv-rise" d="M40 200v-26" stroke="#E3C05A" stroke-width="2" stroke-linecap="round" style="animation-delay:0.0s"/><path class="tv-rise" d="M58 200v-26" stroke="#E3C05A" stroke-width="2" stroke-linecap="round" style="animation-delay:0.4s"/><path class="tv-rise" d="M76 200v-26" stroke="#E3C05A" stroke-width="2" stroke-linecap="round" style="animation-delay:0.8s"/>
+  <text x="30" y="220" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="#6C87A8">WASTE HEAT</text>
+  <path class="tv-flow" d="M310 130h80" stroke="#7FD4A8" stroke-width="2" fill="none"/>
+  <text x="344" y="118" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="#7FD4A8">POWER</text>
+</svg>
+        <div class="viz-caption">Organic Rankine Cycle</div>
+      </div>
+    </article>
+
+    <article class="platform">
+      <div class="platform-copy">
+        <div class="platform-index"><b>02</b> &mdash; Nuclear</div>
+        <h3>Small Modular Reactors</h3>
+        <p>A small modular reactor moves nuclear construction from the field into the factory. Rather than a single bespoke unit built on site over a decade, reactors are fabricated in controlled conditions, shipped and installed &mdash; compressing schedule, reducing capital risk and improving quality control.</p>
+        <p>Modularity is the commercial advantage. Capacity is added in increments as demand materializes, so a campus can start modest and scale without redesign. Modern designs rely on passive safety systems requiring no operator action to shut down safely. Beyond electricity, the same units supply high-grade process heat for desalination and hydrogen production.</p>
+        <div class="spec-chips"><span>Factory built, not site-fabricated</span><span>Capacity added in increments</span><span>Passive inherent safety</span></div>
+        <p class="market-note">Global SMR market estimated at <b>$8.2B in 2026</b>, growing to about $16.4B by 2034 at a 9.1% CAGR.</p>
+      </div>
+      <div class="platform-viz">
+        <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <g stroke="#33496A" stroke-width="1" fill="none"><path d="M30 210h360"/></g>
+  <g><rect x="48" y="96" width="72" height="104" rx="8" fill="#0A1E3A" stroke="#3E6FA8" stroke-width="1.4"/><ellipse cx="84" cy="96" rx="36" ry="13" fill="#0C2547" stroke="#3E6FA8" stroke-width="1.4"/><circle class="tv-pulse" cx="84" cy="150" r="17" fill="none" stroke="#7FD4A8" stroke-width="1.4" style="animation-delay:0.0s"/><circle cx="84" cy="150" r="7" fill="#7FD4A8"/></g><g><rect x="140" y="96" width="72" height="104" rx="8" fill="#0A1E3A" stroke="#3E6FA8" stroke-width="1.4"/><ellipse cx="176" cy="96" rx="36" ry="13" fill="#0C2547" stroke="#3E6FA8" stroke-width="1.4"/><circle class="tv-pulse" cx="176" cy="150" r="17" fill="none" stroke="#7FD4A8" stroke-width="1.4" style="animation-delay:0.5s"/><circle cx="176" cy="150" r="7" fill="#7FD4A8"/></g><g><rect x="232" y="96" width="72" height="104" rx="8" fill="#0A1E3A" stroke="#3E6FA8" stroke-width="1.4"/><ellipse cx="268" cy="96" rx="36" ry="13" fill="#0C2547" stroke="#3E6FA8" stroke-width="1.4"/><circle class="tv-pulse" cx="268" cy="150" r="17" fill="none" stroke="#7FD4A8" stroke-width="1.4" style="animation-delay:1.0s"/><circle cx="268" cy="150" r="7" fill="#7FD4A8"/></g><g><rect x="324" y="96" width="72" height="104" rx="8" fill="#0A1E3A" stroke="#3E6FA8" stroke-width="1.4"/><ellipse cx="360" cy="96" rx="36" ry="13" fill="#0C2547" stroke="#3E6FA8" stroke-width="1.4"/><circle class="tv-pulse" cx="360" cy="150" r="17" fill="none" stroke="#7FD4A8" stroke-width="1.4" style="animation-delay:1.5s"/><circle cx="360" cy="150" r="7" fill="#7FD4A8"/></g>
+  <path class="tv-flow" d="M30 232h360" stroke="#7FD4A8" stroke-width="2" fill="none"/>
+</svg>
+        <div class="viz-caption">Modular reactor units</div>
+      </div>
+    </article>
+
+    <article class="platform">
+      <div class="platform-copy">
+        <div class="platform-index"><b>03</b> &mdash; Hydrogen</div>
+        <h3>Green Hydrogen</h3>
+        <p>Electrolysis splits water into hydrogen and oxygen using electricity. When that electricity is carbon-free, the hydrogen is too &mdash; a storable, transportable fuel for industry, heavy transport and long-duration power.</p>
+        <p>We favor solid oxide electrolysis. Operating at high temperature, solid oxide cells achieve significantly higher electrical efficiency than low-temperature alternatives, particularly when integrated with waste heat. That makes them a natural pairing with the reactors, geothermal loops and heat-recovery systems elsewhere in the stack.</p>
+        <div class="spec-chips"><span>SOEC solid oxide cells</span><span>42.8% SOEC segment CAGR</span><span>~95% emissions cut vs. fossil H₂</span></div>
+        <p class="market-note">Green hydrogen valued at $11.9B in 2025, projected to reach <b>$115.4B by 2033</b> at 30.2% CAGR.</p>
+      </div>
+      <div class="platform-viz">
+        <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="120" y="64" width="180" height="132" rx="10" fill="#0A1E3A" stroke="#3E6FA8" stroke-width="1.5"/>
+  <g stroke="#33496A" stroke-width="1.2"><path d="M150 72v116"/><path d="M180 72v116"/><path d="M210 72v116"/><path d="M240 72v116"/><path d="M270 72v116"/></g>
+  <path class="tv-flow" d="M30 130h90" stroke="#6FA8DC" stroke-width="2" fill="none"/>
+  <text x="30" y="118" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="#6C87A8">H₂O + e⁻</text>
+  <circle class="tv-rise" cx="160" cy="150" r="4.5" fill="#7FD4A8" style="animation-delay:0.0s"/><circle class="tv-rise" cx="186" cy="150" r="4.5" fill="#7FD4A8" style="animation-delay:0.42s"/><circle class="tv-rise" cx="212" cy="150" r="4.5" fill="#7FD4A8" style="animation-delay:0.84s"/><circle class="tv-rise" cx="238" cy="150" r="4.5" fill="#7FD4A8" style="animation-delay:1.26s"/><circle class="tv-rise" cx="264" cy="150" r="4.5" fill="#7FD4A8" style="animation-delay:1.68s"/>
+  <path class="tv-flow" d="M300 100h90" stroke="#7FD4A8" stroke-width="2" fill="none"/>
+  <path class="tv-flow" d="M300 160h90" stroke="#6FA8DC" stroke-width="2" fill="none"/>
+  <text x="356" y="90"  font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#7FD4A8">H₂</text>
+  <text x="356" y="150" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#6FA8DC">O₂</text>
+</svg>
+        <div class="viz-caption">Solid oxide electrolysis</div>
+      </div>
+    </article>
+
+    <article class="platform">
+      <div class="platform-copy">
+        <div class="platform-index"><b>04</b> &mdash; Geothermal</div>
+        <h3>Advanced Closed-Loop Geothermal</h3>
+        <p>Conventional geothermal only works where hot, permeable, water-bearing rock sits near the surface &mdash; a rare geology that has kept the resource confined to a handful of regions. Closed-loop systems remove that constraint by sealing the working fluid inside a buried pipe network that behaves like a deep radiator.</p>
+        <p>Heat transfers by conduction rather than by circulating groundwater, so no aquifer is required and no fracturing is involved &mdash; removing induced-seismicity risk and the water sourcing burden that constrains conventional projects. Because hot rock exists almost everywhere at depth, siting becomes an engineering decision rather than a geological accident.</p>
+        <div class="spec-chips"><span>Anywhere, no special geology</span><span>Zero fracking or aquifer need</span><span>Passive thermosiphon circulation</span></div>
+        <p class="market-note">Global geothermal valued at about <b>$7.9B in 2025</b>, growing toward $12.2B by 2033 at 5.6% CAGR.</p>
+      </div>
+      <div class="platform-viz">
+        <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="0" y="70" width="420" height="190" fill="#071120"/>
+  <path d="M0 70h420" stroke="#33496A" stroke-width="1.4"/>
+  <text x="14" y="60" font-family="ui-monospace,Menlo,monospace" font-size="10"
+        letter-spacing="1.6" fill="#8FA8C4">SURFACE</text>
+  <g stroke="#3E6FA8" stroke-width="2.4" fill="none">
+    <path d="M150 70v70a60 60 0 0 0 60 60h0a60 60 0 0 0 60-60V70"/>
+  </g>
+  <path class="tv-flow" d="M150 70v70a60 60 0 0 0 60 60" stroke="#6FA8DC" stroke-width="2.2" fill="none"/>
+  <path class="tv-flow-r" d="M270 70v70a60 60 0 0 1-60 60" stroke="#E3C05A" stroke-width="2.2" fill="none"/>
+  <g fill="#E3C05A" opacity=".5"><circle class="tv-blink" cx="60" cy="120" r="2.6" style="animation-delay:0.0s"/><circle class="tv-blink" cx="100" cy="158" r="2.6" style="animation-delay:0.3s"/><circle class="tv-blink" cx="140" cy="196" r="2.6" style="animation-delay:0.6s"/><circle class="tv-blink" cx="180" cy="120" r="2.6" style="animation-delay:0.8999999999999999s"/><circle class="tv-blink" cx="220" cy="158" r="2.6" style="animation-delay:1.2s"/><circle class="tv-blink" cx="260" cy="196" r="2.6" style="animation-delay:1.5s"/><circle class="tv-blink" cx="300" cy="120" r="2.6" style="animation-delay:1.7999999999999998s"/><circle class="tv-blink" cx="340" cy="158" r="2.6" style="animation-delay:2.1s"/><circle class="tv-blink" cx="380" cy="196" r="2.6" style="animation-delay:2.4s"/></g>
+</svg>
+        <div class="viz-caption">Heat by conduction — no fracking</div>
+      </div>
+    </article>
+
+    <article class="platform">
+      <div class="platform-copy">
+        <div class="platform-index"><b>05</b> &mdash; Intelligence</div>
+        <h3>AI-Powered Smart Grids</h3>
+        <p>A microgrid running reactors, geothermal, solar, hydrogen and multiple storage chemistries is a control problem before it is an engineering one. The orchestration layer forecasts load and generation, dispatches every asset against price and carbon signals, and rebalances continuously.</p>
+        <p>AI workloads make this harder than a conventional industrial load. Training clusters produce rapid, large swings in demand that can stretch the capability of on-site generation &mdash; a challenge the IEA has specifically flagged. Predictive control smooths those transients, detects faults before they cascade, and islands the campus within a cycle when conditions require it.</p>
+        <div class="spec-chips"><span>Sub-cycle islanding response</span><span>Predictive load and fault forecasting</span><span>Multi-asset economic dispatch</span></div>
+        <p class="market-note">Utilities are prioritizing software-led capacity optimization because it deploys in <b>months where wires take years</b>.</p>
+      </div>
+      <div class="platform-viz">
+        <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <circle cx="210" cy="130" r="34" fill="#0A1E3A" stroke="#6FA8DC" stroke-width="2"/>
+  <text x="210" y="127" text-anchor="middle" font-family="ui-monospace,Menlo,monospace"
+        font-size="9" letter-spacing="1" fill="#CFE2F7">AI</text>
+  <text x="210" y="140" text-anchor="middle" font-family="ui-monospace,Menlo,monospace"
+        font-size="7.5" letter-spacing=".8" fill="#7FA8D4">DISPATCH</text>
+  <circle class="tv-pulse" cx="210" cy="130" r="46" fill="none" stroke="#7FD4A8" stroke-width="1.2"/>
+  <g><path class="tv-flow" d="M210 130L60 60" stroke="#33496A" stroke-width="1.6" fill="none" style="animation-delay:0.0s"/><circle cx="60" cy="60" r="15" fill="#0A1526" stroke="#3E6FA8" stroke-width="1.4"/><text x="60" y="63" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="7" fill="#9EC2E8">SMR</text></g><g><path class="tv-flow" d="M210 130L360 60" stroke="#33496A" stroke-width="1.6" fill="none" style="animation-delay:0.3s"/><circle cx="360" cy="60" r="15" fill="#0A1526" stroke="#3E6FA8" stroke-width="1.4"/><text x="360" y="63" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="7" fill="#9EC2E8">PV</text></g><g><path class="tv-flow" d="M210 130L60 200" stroke="#33496A" stroke-width="1.6" fill="none" style="animation-delay:0.6s"/><circle cx="60" cy="200" r="15" fill="#0A1526" stroke="#3E6FA8" stroke-width="1.4"/><text x="60" y="203" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="7" fill="#9EC2E8">BESS</text></g><g><path class="tv-flow" d="M210 130L360 200" stroke="#33496A" stroke-width="1.6" fill="none" style="animation-delay:0.8999999999999999s"/><circle cx="360" cy="200" r="15" fill="#0A1526" stroke="#3E6FA8" stroke-width="1.4"/><text x="360" y="203" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="7" fill="#9EC2E8">H₂</text></g><g><path class="tv-flow" d="M210 130L210 36" stroke="#33496A" stroke-width="1.6" fill="none" style="animation-delay:1.2s"/><circle cx="210" cy="36" r="15" fill="#0A1526" stroke="#3E6FA8" stroke-width="1.4"/><text x="210" y="39" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="7" fill="#9EC2E8">GEO</text></g><g><path class="tv-flow" d="M210 130L210 224" stroke="#33496A" stroke-width="1.6" fill="none" style="animation-delay:1.5s"/><circle cx="210" cy="224" r="15" fill="#0A1526" stroke="#3E6FA8" stroke-width="1.4"/><text x="210" y="227" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="7" fill="#9EC2E8">LOAD</text></g>
+</svg>
+        <div class="viz-caption">Multi-asset economic dispatch</div>
+      </div>
+    </article>
+
+    <article class="platform">
+      <div class="platform-copy">
+        <div class="platform-index"><b>06</b> &mdash; Hybrid Architecture</div>
+        <h3>Grid-Scale Storage Paired with SMRs</h3>
+        <p>Nuclear and batteries solve opposite problems. A reactor delivers firm, carbon-free baseload but responds slowly and runs most economically at steady output. A battery responds in milliseconds but empties. Paired, they cover the whole envelope.</p>
+        <p>The SMR fleet carries base load at constant, optimal output while grid-scale storage absorbs the transients &mdash; training-run ramps, cooling-plant steps, momentary faults. Storage also lets the reactors run flat through low-demand hours, charging rather than throttling, which materially improves capacity factor and therefore levelized cost.</p>
+        <div class="spec-chips"><span>Firm 24/7 nuclear baseload</span><span>Millisecond storage response</span><span>Higher reactor capacity factor</span></div>
+        <p class="market-note">Grid energy storage projected to grow from $18.3B in 2025 to about <b>$260B by 2035</b> at 30.4% CAGR.</p>
+      </div>
+      <div class="platform-viz">
+        <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="26" y="88" width="94" height="104" rx="8" fill="#0A1E3A" stroke="#3E6FA8" stroke-width="1.4"/>
+  <text x="73" y="82" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9.5" fill="#8FA8C4">SMR</text>
+  <circle class="tv-pulse" cx="73" cy="140" r="20" fill="none" stroke="#7FD4A8" stroke-width="1.4"/>
+  <circle cx="73" cy="140" r="8" fill="#7FD4A8"/>
+  <rect x="163" y="88" width="94" height="104" rx="8" fill="#0A1E3A" stroke="#3E6FA8" stroke-width="1.4"/>
+  <text x="210" y="82" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9.5" fill="#8FA8C4">BESS</text>
+  <rect x="181" y="106" width="58" height="70" rx="4" fill="#071426" stroke="#33496A" stroke-width="1"/>
+  <rect class="tv-fill" x="184" y="109" width="52" height="64" rx="3" fill="#E3C05A" opacity=".8"/>
+  <rect x="300" y="88" width="94" height="104" rx="8" fill="#0A1E3A" stroke="#3E6FA8" stroke-width="1.4"/>
+  <text x="347" y="82" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="9.5" fill="#8FA8C4">AI LOAD</text>
+  <rect class="tv-blink" x="312" y="110" width="10" height="60" rx="2" fill="#6FA8DC" style="animation-delay:0.0s"/><rect class="tv-blink" x="330" y="118" width="10" height="44" rx="2" fill="#6FA8DC" style="animation-delay:0.28s"/><rect class="tv-blink" x="348" y="110" width="10" height="60" rx="2" fill="#6FA8DC" style="animation-delay:0.56s"/><rect class="tv-blink" x="366" y="118" width="10" height="44" rx="2" fill="#6FA8DC" style="animation-delay:0.8400000000000001s"/>
+  <path class="tv-flow" d="M120 140h43" stroke="#7FD4A8" stroke-width="2" fill="none"/>
+  <path class="tv-flow" d="M257 140h43" stroke="#E3C05A" stroke-width="2" fill="none"/>
+</svg>
+        <div class="viz-caption">Baseload plus transient absorption</div>
+      </div>
+    </article>
+
+    <article class="platform">
+      <div class="platform-copy">
+        <div class="platform-index"><b>07</b> &mdash; Multi-Day Storage</div>
+        <h3>Iron-Air Batteries</h3>
+        <p>Lithium-ion economics collapse beyond a few hours. Iron-air chemistry changes the duration curve entirely, delivering multi-day storage from three of the most abundant materials on earth: iron, water and air.</p>
+        <p>The operating principle is reversible rusting. Discharging, the cell breathes in oxygen and converts iron to rust. Charging, current converts the rust back to iron and the cell breathes oxygen out. The electrolyte is water-based and non-flammable &mdash; no thermal runaway pathway and no heavy metals, which changes both the siting envelope and the insurance profile.</p>
+        <div class="spec-chips"><span>Multi-day discharge duration</span><span>Abundant iron, water and air</span><span>No thermal runaway pathway</span></div>
+        <p class="market-note">Utility planning studies point to <b>tens of gigawatts</b> of multi-day storage demand in the US over the next decade.</p>
+      </div>
+      <div class="platform-viz">
+        <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <circle cx="210" cy="126" r="72" fill="none" stroke="#33496A" stroke-width="1.3" stroke-dasharray="4 8"/>
+  <rect x="150" y="86" width="120" height="80" rx="10" fill="#0A1E3A" stroke="#3E6FA8" stroke-width="1.5"/>
+  <text x="210" y="120" text-anchor="middle" font-family="ui-monospace,Menlo,monospace"
+        font-size="13" fill="#E3C05A">Fe</text>
+  <text x="210" y="140" text-anchor="middle" font-family="ui-monospace,Menlo,monospace"
+        font-size="13" fill="#9EC2E8">⇌ Fe₂O₃</text>
+  <path class="tv-flow" d="M60 108q60-34 88 0" stroke="#6FA8DC" stroke-width="2" fill="none"/>
+  <path class="tv-flow-r" d="M272 144q60 34 88 0" stroke="#E3C05A" stroke-width="2" fill="none"/>
+  <text x="52" y="96"  font-family="ui-monospace,Menlo,monospace" font-size="9" fill="#6C87A8">O₂ IN</text>
+  <text x="330" y="170" font-family="ui-monospace,Menlo,monospace" font-size="9" fill="#6C87A8">O₂ OUT</text>
+</svg>
+        <div class="viz-caption">Reversible rusting — breathes O₂</div>
+      </div>
+    </article>
+
+    <article class="platform">
+      <div class="platform-copy">
+        <div class="platform-index"><b>08</b> &mdash; Storage Frontier</div>
+        <h3>Solid-State Batteries</h3>
+        <p>Replacing a liquid electrolyte with a solid one raises energy density, improves safety and removes the flammability that governs how conventional cells must be packaged. The obstacle has never been the chemistry &mdash; it is manufacturing at scale.</p>
+        <p>Solid-state cells demand precise, uniform densification. Conventional uniaxial pressing struggles to achieve even compaction across a large cell. Isostatic pressing applies pressure equally in every direction, and the tooling now exists to make it industrial: warm isostatic presses reaching 600 MPa at up to 145&deg;C with automated batch throughput.</p>
+        <div class="spec-chips"><span>600 MPa warm isostatic pressure</span><span>145&deg;C process temperature</span><span>Uniform omnidirectional compaction</span></div>
+        <p class="market-note">Near-term commercial opportunity sits in <b>process equipment and qualification</b>, ahead of cell volume.</p>
+      </div>
+      <div class="platform-viz">
+        <svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="140" y="96" width="140" height="76" rx="6" fill="#0A1E3A" stroke="#3E6FA8" stroke-width="1.5"/>
+  <g stroke="#33496A" stroke-width="1"><path d="M140 110h140"/><path d="M140 126h140"/><path d="M140 142h140"/><path d="M140 158h140"/></g>
+  <g class="tv-press" style="animation-delay:0.0s"><path d="M210 54L210 88" stroke="#E3C05A" stroke-width="2" stroke-linecap="round"/><path d="M210 88l-6 -8" stroke="#E3C05A" stroke-width="2" stroke-linecap="round"/></g><g class="tv-press" style="animation-delay:0.12s"><path d="M210 214L210 180" stroke="#E3C05A" stroke-width="2" stroke-linecap="round"/><path d="M210 180l-6 8" stroke="#E3C05A" stroke-width="2" stroke-linecap="round"/></g><g class="tv-press" style="animation-delay:0.24s"><path d="M96 134L134 134" stroke="#E3C05A" stroke-width="2" stroke-linecap="round"/><path d="M134 134l8 -6" stroke="#E3C05A" stroke-width="2" stroke-linecap="round"/></g><g class="tv-press" style="animation-delay:0.36s"><path d="M324 134L286 134" stroke="#E3C05A" stroke-width="2" stroke-linecap="round"/><path d="M286 134l-8 -6" stroke="#E3C05A" stroke-width="2" stroke-linecap="round"/></g>
+  <text x="210" y="138" text-anchor="middle" font-family="ui-monospace,Menlo,monospace"
+        font-size="10" fill="#9EC2E8">600 MPa</text>
+</svg>
+        <div class="viz-caption">Isostatic — equal pressure, all axes</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ═══ ENERGY PLATFORM ════════════════════════════════════════════════ -->
+<section class="section rule">
+  <div class="wrap">
+    <div class="gold-rule"></div>
+    <div class="eyebrow">Technology</div>
+    <h2>The engine of sustainable compute</h2>
+    <p class="lead">We generate, store and manage clean power rather than simply buying it.</p>
+
+    <div class="grid grid-2">
+      <div class="card"><div class="card-label">Generation &amp; storage</div>
+        <h3>Energy microgrid</h3>
+        <p>Solar generation, wind generation and a Battery Energy Storage System combine to deliver
+           uninterrupted, clean power independent of grid conditions.</p>
+        <span class="chip">24/7 clean supply</span></div>
+      <div class="card"><div class="card-label">Intelligence</div>
+        <h3>AI-powered management</h3>
+        <p>Our Energy Management System dynamically balances supply and demand across generation,
+           storage and load in real time.</p>
+        <span class="chip">Dynamic dispatch</span></div>
+      <div class="card"><div class="card-label">Thermal</div>
+        <h3>Advanced cooling</h3>
+        <p>AI-optimized cooling reduces energy consumption by 30%, with potential for heat recovery —
+           contributing directly to a PUE below 1.2.</p>
+        <span class="chip">30% reduction</span></div>
+      <div class="card"><div class="card-label">Operations</div>
+        <h3>Smart monitoring</h3>
+        <p>Real-time performance monitoring across power, thermal and compute layers ensures
+           reliability and peak efficiency.</p>
+        <span class="chip">Real-time</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ESG ════════════════════════════════════════════════════════════ -->
+<section class="section rule" id="esg">
+  <div class="wrap">
+    <div class="gold-rule"></div>
+    <div class="eyebrow">Commitment to ESG</div>
+    <h2>A net-zero future, built today</h2>
+    <p class="lead">Sustainability is foundational rather than an afterthought. PacinfraX is designed
+       to achieve Net-Zero by 2050, with transparent ESG metrics guiding the entire infrastructure lifecycle.</p>
+
+    <div class="grid grid-3">
+      <div class="card"><h3>100% renewable energy</h3>
+        <p>Sourced from dedicated on-site solar, wind and battery storage systems.</p></div>
+      <div class="card"><h3>Lower carbon footprint</h3>
+        <p>Emissions reduced by up to 80% against traditional facilities.</p></div>
+      <div class="card"><h3>Resource efficiency</h3>
+        <p>AI-optimized cooling systems that intelligently save both energy and water.</p></div>
+      <div class="card"><h3>Circular IT economy</h3>
+        <p>Reuse and recycling of IT equipment to reduce e-waste and lifecycle cost.</p></div>
+      <div class="card"><h3>Radical transparency</h3>
+        <p>Comprehensive real-time ESG data accessible through the client dashboard.</p></div>
+      <div class="card"><h3>Global standards</h3>
+        <p>Designed in alignment with internationally recognized sustainability and
+           energy-efficiency best practices.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ONWARD NAVIGATION ══════════════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="page-next">
+      <a class="btn btn-secondary" href="infrastructure.html">Infrastructure</a>
+      <a class="btn btn-secondary" href="manufacturing.html">Manufacturing</a>
+      <a class="btn btn-primary" href="contact.html">Talk to PacinfraX</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ FOOTER ═════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+
+      <div class="footer-col footer-brand">
+        <a class="brand" href="index.html" aria-label="PacinfraX Corporation home">
+          <svg viewBox="0 0 1264 2046" width="30" height="49" aria-hidden="true"><path fill="#0A64AA" d="M8.26,1354.25C8.52,935.13 8.63,911.96 10.32,902.00C20.80,840.54 50.66,790.71 98.43,754.98C105.84,749.44 515.99,496.00 517.55,496.00C517.81,496.00 517.90,695.91 517.76,940.25L517.50,1384.50L515.21,1396.00C503.65,1454.18 473.91,1502.65 429.50,1535.69C421.38,1541.73 10.11,1796.00 8.46,1796.00C8.19,1796.00 8.10,1597.21 8.26,1354.25ZM1254.14,1245.00C1248.78,1227.35 1231.68,1203.67 1214.29,1189.83C1210.80,1187.06 1077.80,1103.21 918.73,1003.49L629.50,822.19L629.25,415.10C629.11,191.19 629.17,8.00 629.39,8.00C630.38,8.00 1198.20,328.75 1203.50,332.30C1206.80,334.51 1214.06,340.86 1219.63,346.41C1237.31,364.03 1247.90,383.48 1253.72,409.03C1255.30,415.97 1255.44,442.14 1255.72,781.00C1256.09,1225.00 1256.00,1251.14 1254.14,1245.00Z"/><path fill="#003773" d="M970.58,1877.49C814.42,1789.32 683.35,1714.82 679.32,1711.94C659.83,1698.00 642.95,1674.69 635.17,1651.00C629.09,1632.47 629.61,1664.38 629.28,1287.24L628.98,943.97L637.24,949.14C742.50,1014.97 1199.19,1301.41 1203.50,1304.30C1212.73,1310.49 1228.94,1327.24 1235.59,1337.48C1245.78,1353.16 1252.65,1372.13 1254.96,1390.97C1256.18,1400.89 1256.46,2038.06 1255.25,2037.90C1254.84,2037.85 1126.73,1965.66 970.58,1877.49Z"/></svg>
+          <span>
+            <span class="brand-name">PACINFRAX</span><br>
+            <i class="brand-suffix">CORPORATION</i>
+          </span>
+        </a>
+        <p>Green data centers for AI and high-performance computing &mdash; integrated on-site generation, storage and an intelligent microgrid.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="infrastructure.html">Infrastructure</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="manufacturing.html">Manufacturing</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="new-energy.html">New Energy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact">
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+16234718936">+1 623 471 8936</a>
+          </div>
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:support@pacinfrax.com">support@pacinfrax.com</a>
+          </div>
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon &ndash; Fri, 9:00 AM &ndash; 6:00 PM (PT)</span>
+          </div>
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <address>19900 MacArthur Boulevard, Suite 915<br>Irvine, CA 92612, USA</address>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Global Offices</h4>
+        <ul class="footer-offices">
+          <li><b>Irvine, California</b><span>Headquarters &mdash; capital &amp; strategy</span></li>
+          <li><b>McCamey, Texas</b><span>Data center campus &mdash; 24/7 operations</span></li>
+          <li><b>Singapore</b><span>138 Robinson Road, #24-01 Oxley Tower</span></li>
+          <li><b>Hong Kong</b><span>Unit 1411, 14/F, Cosco Tower, Sheung Wan</span></li>
+          <li><b>Ho Chi Minh City</b><span>549A Huynh Tan Phat Road, Tan Thuan Ward</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 PacinfraX Corporation. All rights reserved.</span>
+      <nav aria-label="Legal">
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="sustainability.html">Sustainability</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Progressive enhancement only: closes the drawer after a link is tapped.
+     Navigation works identically without it. -->
+<script>
+(function () {
+  var toggle = document.getElementById('nav-toggle');
+  var drawer = document.getElementById('nav-drawer');
+  if (!toggle || !drawer) return;
+  drawer.addEventListener('click', function (e) {
+    if (e.target.closest('a')) toggle.checked = false;
+  });
+})();
+</script>
+
+</body>
+</html>

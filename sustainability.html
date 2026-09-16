@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#003773">
+
+  <title>Sustainability — PacinfraX Corporation</title>
+  <meta name="description" content="100% renewable energy, AI-driven efficiency below 1.2 PUE, heat reuse and a Net-Zero 2050 roadmap for high-performance computing infrastructure.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23FFFFFF'/%3E%3Cpath d='M20 8 8 15v18l12-7z' fill='%230A64AA'/%3E%3Cpath d='M28 8v18l12 7V15z' fill='%230A64AA'/%3E%3Cpath d='M28 28v12l12 7V35z' fill='%23003773'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- ═══ SITE NAVIGATION ════════════════════════════════════════════════
+     The drawer is a checkbox + label. No JavaScript opens or closes it.
+     ════════════════════════════════════════════════════════════════════ -->
+<nav class="site-nav">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open navigation menu">
+
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 1264 2046" width="30" height="49" aria-hidden="true"><path fill="#0A64AA" d="M8.26,1354.25C8.52,935.13 8.63,911.96 10.32,902.00C20.80,840.54 50.66,790.71 98.43,754.98C105.84,749.44 515.99,496.00 517.55,496.00C517.81,496.00 517.90,695.91 517.76,940.25L517.50,1384.50L515.21,1396.00C503.65,1454.18 473.91,1502.65 429.50,1535.69C421.38,1541.73 10.11,1796.00 8.46,1796.00C8.19,1796.00 8.10,1597.21 8.26,1354.25ZM1254.14,1245.00C1248.78,1227.35 1231.68,1203.67 1214.29,1189.83C1210.80,1187.06 1077.80,1103.21 918.73,1003.49L629.50,822.19L629.25,415.10C629.11,191.19 629.17,8.00 629.39,8.00C630.38,8.00 1198.20,328.75 1203.50,332.30C1206.80,334.51 1214.06,340.86 1219.63,346.41C1237.31,364.03 1247.90,383.48 1253.72,409.03C1255.30,415.97 1255.44,442.14 1255.72,781.00C1256.09,1225.00 1256.00,1251.14 1254.14,1245.00Z"/><path fill="#003773" d="M970.58,1877.49C814.42,1789.32 683.35,1714.82 679.32,1711.94C659.83,1698.00 642.95,1674.69 635.17,1651.00C629.09,1632.47 629.61,1664.38 629.28,1287.24L628.98,943.97L637.24,949.14C742.50,1014.97 1199.19,1301.41 1203.50,1304.30C1212.73,1310.49 1228.94,1327.24 1235.59,1337.48C1245.78,1353.16 1252.65,1372.13 1254.96,1390.97C1256.18,1400.89 1256.46,2038.06 1255.25,2037.90C1254.84,2037.85 1126.73,1965.66 970.58,1877.49Z"/></svg>
+      <span class="brand-text">
+        <span class="brand-name">PACINFRAX</span>
+        <i class="brand-suffix">CORPORATION</i>
+      </span>
+    </a>
+
+    <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>
+        <li><a href="sustainability.html" class="is-active">Sustainability</a></li>
+        <li><a href="manufacturing.html">Manufacturing</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="new-energy.html">New Energy</a></li>
+        <li><a class="nav-cta" href="contact.html">Contact</a></li>
+    </ul>
+
+    <label class="nav-burger" for="nav-toggle" aria-hidden="true"><span></span></label>
+  </div>
+
+  <div class="nav-drawer" id="nav-drawer">
+    <div class="nav-drawer-inner">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="infrastructure.html">Infrastructure</a>
+        <a href="sustainability.html" class="is-active">Sustainability</a>
+        <a href="manufacturing.html">Manufacturing</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="new-energy.html">New Energy</a>
+        <a class="is-cta" href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══ PAGE HERO ══════════════════════════════════════════════════════ -->
+<section class="page-hero page-hero--energy">
+  <div class="wrap page-hero-grid">
+
+    <div class="page-hero-copy">
+      <nav class="page-hero-crumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> &nbsp;/&nbsp; Sustainability
+      </nav>
+      <span class="page-hero-pill">Sustainability · Net Zero 2050</span>
+      <h1>Clean power, conserved resources.</h1>
+      <p>Empowering high-performance computing workloads with 100% renewable energy &mdash; generation, storage, recovery and compute closed into a single loop.</p>
+      <div class="btn-row">
+        <a class="btn-light" href="#energy">Explore our green model</a>
+        <a class="btn-ghost" href="contact.html">Talk to us</a>
+      </div>
+    </div>
+
+    <div class="page-hero-art"><svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <g class="loop-orbit">
+    <circle cx="300" cy="300" r="230" fill="none" stroke="#243E5C"
+            stroke-width="1" stroke-dasharray="3 11"/>
+  </g>
+
+  <!-- circulating energy loop -->
+  <circle cx="300" cy="300" r="186" fill="none" stroke="#2C4A6E" stroke-width="1.3"/>
+  <circle class="loop-flow" cx="300" cy="300" r="186" fill="none"
+          stroke="#7FD4A8" stroke-width="2"/>
+
+  <!-- four stations on the loop -->
+  <g>
+    <!-- generate -->
+    <circle cx="300" cy="114" r="30" fill="#060E1A" stroke="#6FA8DC" stroke-width="1.8"/>
+    <g stroke="#F2C94C" stroke-width="1.8" fill="none" stroke-linecap="round">
+      <circle cx="300" cy="114" r="9"/>
+      <path d="M300 96v-7M300 139v7M282 114h-7M325 114h7M287 101l-5-5M313 127l5 5M287 127l-5 5M313 101l5-5"/>
+    </g>
+    <text x="300" y="68" text-anchor="middle" font-family="ui-monospace,Menlo,monospace"
+          font-size="11" letter-spacing="2" fill="#8FA4BD">GENERATE</text>
+
+    <!-- store -->
+    <circle cx="486" cy="300" r="30" fill="#060E1A" stroke="#6FA8DC" stroke-width="1.8"/>
+    <g stroke="#7FD4A8" stroke-width="1.8" fill="none">
+      <rect x="472" y="290" width="26" height="20" rx="3"/>
+      <path d="M501 296v8" stroke-linecap="round"/>
+    </g>
+    <text x="486" y="352" text-anchor="middle" font-family="ui-monospace,Menlo,monospace"
+          font-size="11" letter-spacing="2" fill="#8FA4BD">STORE</text>
+
+    <!-- compute -->
+    <circle cx="300" cy="486" r="30" fill="#060E1A" stroke="#6FA8DC" stroke-width="1.8"/>
+    <g stroke="#9EC2E8" stroke-width="1.7" fill="none">
+      <rect x="286" y="474" width="28" height="10" rx="2"/>
+      <rect x="286" y="488" width="28" height="10" rx="2"/>
+    </g>
+    <text x="300" y="542" text-anchor="middle" font-family="ui-monospace,Menlo,monospace"
+          font-size="11" letter-spacing="2" fill="#8FA4BD">COMPUTE</text>
+
+    <!-- recover -->
+    <circle cx="114" cy="300" r="30" fill="#060E1A" stroke="#6FA8DC" stroke-width="1.8"/>
+    <g stroke="#F2C94C" stroke-width="1.8" fill="none" stroke-linecap="round">
+      <path d="M104 310c0-9 20-9 20-18"/>
+      <path d="M104 296l-4 8 8 1"/>
+      <path d="M124 304l4-8-8-1"/>
+    </g>
+    <text x="114" y="352" text-anchor="middle" font-family="ui-monospace,Menlo,monospace"
+          font-size="11" letter-spacing="2" fill="#8FA4BD">RECOVER</text>
+  </g>
+
+  <!-- core -->
+  <polygon points="300.0,238.0 353.7,269.0 353.7,331.0 300.0,362.0 246.3,331.0 246.3,269.0" fill="none" stroke="#3E6FA8" stroke-width="1.4"/>
+  <polygon points="300.0,258.0 336.4,279.0 336.4,321.0 300.0,342.0 263.6,321.0 263.6,279.0" fill="#0A1E3A" stroke="#6FA8DC" stroke-width="1.7"/>
+  <circle class="sv-ring-a" cx="300" cy="300" r="34" fill="none" stroke="#7FD4A8" stroke-width="1.1"/>
+  <circle class="sv-glow" cx="300" cy="300" r="11" fill="#7FD4A8"/>
+  <text x="300" y="252" text-anchor="middle" font-family="ui-monospace,Menlo,monospace"
+        font-size="10.5" letter-spacing="2.2" fill="#7FD4A8">NET ZERO 2050</text>
+</svg></div>
+
+  </div>
+</section>
+
+<!-- ═══ VISION & COMMITMENT ════════════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <div class="gold-rule"></div>
+      <div class="eyebrow">Vision &amp; Commitment</div>
+      <h2>Our commitment to a carbon-neutral future</h2>
+      <p class="lead">Driving net-zero high-performance computing and reducing carbon emissions
+         across every operation.</p>
+    </div>
+    <div>
+      <p><strong>PacinfraX is dedicated to achieving Net-Zero by 2050.</strong></p>
+      <p>Through a combination of 100% renewable energy, AI-driven energy management and
+         intelligent cooling systems, we are redefining how high-performance computing
+         operates sustainably.</p>
+      <p>Our mission is to deliver world-class HPC performance with minimal environmental
+         impact &mdash; empowering AI and big data industries to innovate sustainably.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="contact.html">Partner with us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PERFORMANCE IN NUMBERS ═════════════════════════════════════════ -->
+<section class="metric-dark">
+  <div class="wrap">
+    <div class="eyebrow">By the numbers</div>
+    <h2>Our sustainable performance</h2>
+    <p class="lead">World-class HPC performance powered by 100% renewable energy
+       and optimized efficiency.</p>
+
+    <div class="metric-dark-grid">
+      <div class="metric-dark-item">
+        <b>100%</b><strong>Renewable energy</strong><span>powering all operations</span>
+      </div>
+      <div class="metric-dark-item">
+        <b>80%</b><strong>Lower CO&#8322; emissions</strong><span>versus traditional data centers</span>
+      </div>
+      <div class="metric-dark-item">
+        <b>&lt; 1.2</b><strong>Industry-leading efficiency</strong><span>with AI-optimized systems</span>
+      </div>
+      <div class="metric-dark-item">
+        <b>2050</b><strong>Net-zero target</strong><span>across the project lifecycle</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GREEN ENERGY ECOSYSTEM ═════════════════════════════════════════ -->
+<section class="section" id="energy">
+  <div class="wrap">
+    <div class="gold-rule"></div>
+    <div class="eyebrow">Green Energy</div>
+    <h2>Carbon-neutral HPC on 100% renewable energy</h2>
+    <p class="lead">An integrated renewable energy ecosystem delivering performance, reliability
+       and minimal carbon impact.</p>
+
+    <div class="feature-tiles">
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.9 4.9l1.9 1.9M17.2 17.2l1.9 1.9M4.9 19.1l1.9-1.9M17.2 6.8l1.9-1.9" stroke-linecap="round"/></svg></div>
+        <h3>Solar &amp; wind energy</h3>
+        <p>Convert sunlight and wind into clean electricity for HPC operations.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9"><rect x="2" y="7" width="17" height="10" rx="2.5"/><path d="M22 10.5v3" stroke-linecap="round"/><path d="M11 9.5 8.6 13H11l-.5 2.4L13 12h-2z" fill="#0A64AA" stroke="none"/></svg></div>
+        <h3>Battery energy storage</h3>
+        <p>Store excess renewable energy for use during peak demand.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9"><rect x="7" y="7" width="10" height="10" rx="2.2"/><path d="M10 3.2v3.8M14 3.2v3.8M10 17v3.8M14 17v3.8M3.2 10H7M3.2 14H7M17 10h3.8M17 14h3.8" stroke-linecap="round"/></svg></div>
+        <h3>Energy management (EMS)</h3>
+        <p>An AI system balances energy production, storage and usage in real time.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9"><path d="M12 3v18M3 12h18" stroke-linecap="round"/><circle cx="12" cy="12" r="3.4"/><circle cx="12" cy="3.4" r="1.4"/><circle cx="12" cy="20.6" r="1.4"/><circle cx="3.4" cy="12" r="1.4"/><circle cx="20.6" cy="12" r="1.4"/></svg></div>
+        <h3>Microgrid integration</h3>
+        <p>Stable, efficient distribution of renewable power across the campus.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l4.5-6 3.5 4 3-7 4 9"/><path d="M3 21h18"/></svg></div>
+        <h3>Peak load management</h3>
+        <p>Optimize energy use at peak for uninterrupted 24/7 HPC performance.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9" stroke-linecap="round"><path d="M2 14c2.5 0 2.5-5 5-5s2.5 5 5 5 2.5-5 5-5 2.5 5 5 5"/><path d="M2 19h20" opacity=".4"/></svg></div>
+        <h3>Predictive energy AI</h3>
+        <p>Forecast solar and wind output and manage storage efficiently.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ AI COOLING ═════════════════════════════════════════════════════ -->
+<section class="section rule" id="cooling">
+  <div class="wrap">
+    <div class="gold-rule"></div>
+    <div class="eyebrow">AI Cooling &amp; Optimization</div>
+    <h2>Smart cooling and energy optimization</h2>
+    <p class="lead">Harnessing AI to minimize energy waste and maximize HPC performance.</p>
+
+    <div class="feature-tiles">
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9" stroke-linecap="round"><path d="M12 2v20M4 7l16 10M20 7L4 17"/><path d="M12 6.5 9.6 4.4M12 6.5l2.4-2.1M12 17.5l-2.4 2.1M12 17.5l2.4 2.1"/></svg></div>
+        <h3>AI optimization</h3>
+        <p>Optimizes cooling and energy use dynamically across the data center.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9" stroke-linecap="round"><path d="M2 14c2.5 0 2.5-5 5-5s2.5 5 5 5 2.5-5 5-5 2.5 5 5 5"/><path d="M2 19h20" opacity=".4"/></svg></div>
+        <h3>Adaptive airflow control</h3>
+        <p>Smart sensors regulate airflow and temperature zones in real time.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l4.5-6 3.5 4 3-7 4 9"/><path d="M3 21h18"/></svg></div>
+        <h3>Power efficiency</h3>
+        <p>Cuts cooling consumption by up to 30% without compromising performance.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9" stroke-linecap="round"><path d="M3 20h18M6 20v-6M11 20V8M16 20v-9M21 20V5"/></svg></div>
+        <h3>Predictive analytics</h3>
+        <p>AI models predict thermal patterns to avoid overheating and waste.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HEAT REUSE ═════════════════════════════════════════════════════ -->
+<section class="section rule" id="heat">
+  <div class="wrap split">
+    <div>
+      <div class="gold-rule"></div>
+      <div class="eyebrow">Heat Reuse</div>
+      <h2>Circular energy recovery</h2>
+      <p>Turning waste heat into value for a genuinely circular energy ecosystem &mdash;
+         output added without burning a single additional unit of fuel.</p>
+    </div>
+    <div class="flow">
+      <div class="flow-step">
+        <div class="flow-num">01</div>
+        <h3>Heat capture</h3>
+        <p>Reclaims excess heat from HPC clusters and cooling systems for efficient use.</p>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">02</div>
+        <h3>Thermal reuse</h3>
+        <p>Redirects recovered heat to on-site or nearby facilities for optimal reuse.</p>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">03</div>
+        <h3>Circular integration</h3>
+        <p>Feeds heat recovery back into the PacinfraX energy management loop for maximum efficiency.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EQUIPMENT LIFECYCLE ════════════════════════════════════════════ -->
+<section class="section rule" id="lifecycle">
+  <div class="wrap">
+    <div class="gold-rule"></div>
+    <div class="eyebrow">Sustainable Equipment Lifecycle</div>
+    <h2>Designed for sustainability at every stage</h2>
+    <p class="lead">From sourcing to recycling, every stage of the hardware lifecycle is
+       designed with environmental impact in mind.</p>
+
+    <div class="feature-tiles">
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c0 9-5.5 14-13 14H4c0-8 6-12 16-14z"/><path d="M4 20c3-6 7-9 12-11"/></svg></div>
+        <h3>Eco-friendly sourcing</h3>
+        <p>Servers and components responsibly sourced from certified suppliers committed to low environmental impact.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1.4" fill="#0A64AA"/></svg></div>
+        <h3>Energy-efficient operations</h3>
+        <p>Devices managed with AI monitoring to maintain maximum energy efficiency throughout their lifecycle.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10a8.5 8.5 0 0 1 14.6-4.4L21 8"/><path d="M21 4v4h-4"/><path d="M20.5 14a8.5 8.5 0 0 1-14.6 4.4L3 16"/><path d="M3 20v-4h4"/></svg></div>
+        <h3>Recycling &amp; responsible disposal</h3>
+        <p>Devices recycled or disposed of responsibly to reduce e-waste and comply with environmental standards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ADVANTAGES ═════════════════════════════════════════════════════ -->
+<section class="section rule" id="advantages">
+  <div class="wrap">
+    <div class="gold-rule"></div>
+    <div class="eyebrow">Our Advantages</div>
+    <h2>Why choose PacinfraX for green HPC</h2>
+    <p class="lead">Unmatched performance, sustainability and reliability.</p>
+
+    <div class="feature-tiles">
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.9 4.9l1.9 1.9M17.2 17.2l1.9 1.9M4.9 19.1l1.9-1.9M17.2 6.8l1.9-1.9" stroke-linecap="round"/></svg></div>
+        <h3>100% renewable energy</h3>
+        <p>All operations powered by clean solar and wind energy, supported by large-scale battery storage.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9"><rect x="7" y="7" width="10" height="10" rx="2.2"/><path d="M10 3.2v3.8M14 3.2v3.8M10 17v3.8M14 17v3.8M3.2 10H7M3.2 14H7M17 10h3.8M17 14h3.8" stroke-linecap="round"/></svg></div>
+        <h3>AI-driven energy optimization</h3>
+        <p>Smart cooling and predictive AI reduce waste, maintaining an industry-leading PUE below 1.2.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10a8.5 8.5 0 0 1 14.6-4.4L21 8"/><path d="M21 4v4h-4"/><path d="M20.5 14a8.5 8.5 0 0 1-14.6 4.4L3 16"/><path d="M3 20v-4h4"/></svg></div>
+        <h3>Heat reuse and circular loop</h3>
+        <p>Waste heat is recovered and reintegrated to support on-site operations and reduce emissions.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1.4" fill="#0A64AA"/></svg></div>
+        <h3>Carbon-neutral commitment</h3>
+        <p>Following a Net-Zero 2050 roadmap, cutting CO₂ emissions up to 80% versus traditional facilities.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c0 9-5.5 14-13 14H4c0-8 6-12 16-14z"/><path d="M4 20c3-6 7-9 12-11"/></svg></div>
+        <h3>Sustainable equipment lifecycle</h3>
+        <p>From sourcing to recycling, every device is managed for longevity, efficiency and responsible disposal.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#0A64AA" stroke-width="1.9" stroke-linejoin="round"><path d="M12 2.5 20 6v6c0 5-3.4 8.4-8 9.5-4.6-1.1-8-4.5-8-9.5V6z"/><path d="M8.8 12l2.2 2.3 4.2-4.6" stroke-linecap="round"/></svg></div>
+        <h3>Sustainability-driven design</h3>
+        <p>Infrastructure designed in alignment with global sustainability and energy-efficiency best practices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CLOSING CTA ════════════════════════════════════════════════════ -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Start your green compute journey</h2>
+    <p class="lead">Let PacinfraX drive your performance and sustainability.
+       Schedule a custom consultation today.</p>
+    <div class="btn-row">
+      <a class="btn-light" href="contact.html">Talk to PacinfraX</a>
+      <a class="btn-ghost" href="tel:+16234718936">+1 623 471 8936</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══ FOOTER ═════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+
+      <div class="footer-col footer-brand">
+        <a class="brand" href="index.html" aria-label="PacinfraX Corporation home">
+          <svg viewBox="0 0 1264 2046" width="30" height="49" aria-hidden="true"><path fill="#0A64AA" d="M8.26,1354.25C8.52,935.13 8.63,911.96 10.32,902.00C20.80,840.54 50.66,790.71 98.43,754.98C105.84,749.44 515.99,496.00 517.55,496.00C517.81,496.00 517.90,695.91 517.76,940.25L517.50,1384.50L515.21,1396.00C503.65,1454.18 473.91,1502.65 429.50,1535.69C421.38,1541.73 10.11,1796.00 8.46,1796.00C8.19,1796.00 8.10,1597.21 8.26,1354.25ZM1254.14,1245.00C1248.78,1227.35 1231.68,1203.67 1214.29,1189.83C1210.80,1187.06 1077.80,1103.21 918.73,1003.49L629.50,822.19L629.25,415.10C629.11,191.19 629.17,8.00 629.39,8.00C630.38,8.00 1198.20,328.75 1203.50,332.30C1206.80,334.51 1214.06,340.86 1219.63,346.41C1237.31,364.03 1247.90,383.48 1253.72,409.03C1255.30,415.97 1255.44,442.14 1255.72,781.00C1256.09,1225.00 1256.00,1251.14 1254.14,1245.00Z"/><path fill="#003773" d="M970.58,1877.49C814.42,1789.32 683.35,1714.82 679.32,1711.94C659.83,1698.00 642.95,1674.69 635.17,1651.00C629.09,1632.47 629.61,1664.38 629.28,1287.24L628.98,943.97L637.24,949.14C742.50,1014.97 1199.19,1301.41 1203.50,1304.30C1212.73,1310.49 1228.94,1327.24 1235.59,1337.48C1245.78,1353.16 1252.65,1372.13 1254.96,1390.97C1256.18,1400.89 1256.46,2038.06 1255.25,2037.90C1254.84,2037.85 1126.73,1965.66 970.58,1877.49Z"/></svg>
+          <span>
+            <span class="brand-name">PACINFRAX</span><br>
+            <i class="brand-suffix">CORPORATION</i>
+          </span>
+        </a>
+        <p>Green data centers for AI and high-performance computing &mdash; integrated on-site generation, storage and an intelligent microgrid.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="infrastructure.html">Infrastructure</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="manufacturing.html">Manufacturing</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="new-energy.html">New Energy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact">
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+16234718936">+1 623 471 8936</a>
+          </div>
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:support@pacinfrax.com">support@pacinfrax.com</a>
+          </div>
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Mon &ndash; Fri, 9:00 AM &ndash; 6:00 PM (PT)</span>
+          </div>
+          <div class="footer-contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <address>19900 MacArthur Boulevard, Suite 915<br>Irvine, CA 92612, USA</address>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Global Offices</h4>
+        <ul class="footer-offices">
+          <li><b>Irvine, California</b><span>Headquarters &mdash; capital &amp; strategy</span></li>
+          <li><b>McCamey, Texas</b><span>Data center campus &mdash; 24/7 operations</span></li>
+          <li><b>Singapore</b><span>138 Robinson Road, #24-01 Oxley Tower</span></li>
+          <li><b>Hong Kong</b><span>Unit 1411, 14/F, Cosco Tower, Sheung Wan</span></li>
+          <li><b>Ho Chi Minh City</b><span>549A Huynh Tan Phat Road, Tan Thuan Ward</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 PacinfraX Corporation. All rights reserved.</span>
+      <nav aria-label="Legal">
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="sustainability.html">Sustainability</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Progressive enhancement only: closes the drawer after a link is tapped.
+     Navigation works identically without it. -->
+<script>
+(function () {
+  var toggle = document.getElementById('nav-toggle');
+  var drawer = document.getElementById('nav-drawer');
+  if (!toggle || !drawer) return;
+  drawer.addEventListener('click', function (e) {
+    if (e.target.closest('a')) toggle.checked = false;
+  });
+})();
+</script>
+
+</body>
+</html>
