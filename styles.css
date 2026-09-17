@@ -139,6 +139,7 @@ h1, h2, h3, h4 {
 }
 h1 { font-size: clamp(1.95rem, 5vw,   3.7rem);  max-width: 19ch; }
 h2 { font-size: clamp(1.65rem, 3.4vw, 2.6rem);  max-width: 24ch; }
+h2.energy-platform-heading { max-width: none; }
 h3 { font-size: clamp(1.12rem, 1.5vw, 1.3rem); }
 
 p {
@@ -1215,7 +1216,7 @@ textarea { min-height: 118px; resize: vertical; }
   vertical-align: .35em; font-weight: 600; letter-spacing: 0;
 }
 .metric-dark-item strong { display: block; color: #CFE2F7; font-weight: 600;
-                           margin-top: .7rem; font-size: 1rem; }
+                           margin-top: .4rem; font-size: 1rem; }
 .metric-dark-item span   { display: block; color: #8FA4BD; font-size: .9rem; margin-top: .15rem; }
 
 .metric-dark--snapshot .metric-dark-grid { margin-top: 2rem; row-gap: .5rem; }
@@ -1228,7 +1229,7 @@ textarea { min-height: 118px; resize: vertical; }
 /* Align number / label / caption baselines across the 4 items */
 @media (min-width: 900px) {
   .metric-dark-grid { grid-template-columns: repeat(4, 1fr);
-                      grid-template-rows: auto auto auto; }
+                      grid-template-rows: auto auto auto; row-gap: .5rem; }
   .metric-dark-item { grid-row: span 3;
                       display: grid; grid-template-rows: subgrid; }
 }
@@ -1351,7 +1352,7 @@ textarea { min-height: 118px; resize: vertical; }
   padding: 1.6rem 1.4rem 1.5rem; color: #E4ECF6;
 }
 .project-card .project-tag { align-self: flex-start; margin-top: auto; }
-.project-card .project-tag + .project-link { margin-top: .6rem; }
+.project-card .project-link { margin-bottom: .6rem; }
 .project-card { border-color: #1D3556; }
 .project-mw {
   font-size: clamp(1.9rem, 3.4vw, 2.5rem); font-weight: 700; color: #FFFFFF;
