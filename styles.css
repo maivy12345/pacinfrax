@@ -206,7 +206,7 @@ strong { color: var(--color-text); font-weight: 600; }
 /* --- desktop links --- */
 .nav-links { display: flex; gap: 1.25rem; list-style: none; margin: 0; padding: 0;
              align-items: center; }
-.nav-links a { text-decoration: none; color: var(--color-text-muted);
+.nav-links a { text-decoration: none; color: var(--color-text-lead);
                font-size: .855rem; white-space: nowrap; transition: color .2s; }
 .nav-links a:hover { color: var(--color-text); }
 .nav-links a.is-active { color: var(--color-text); font-weight: 600;
@@ -258,7 +258,7 @@ strong { color: var(--color-text); font-weight: 600; }
   .nav-drawer a {
     display: block;
     padding: .85rem 0;
-    color: var(--color-text-muted);
+    color: var(--color-text-lead);
     text-decoration: none;
     border-bottom: 1px solid var(--color-border);
     font-size: 1.02rem;
